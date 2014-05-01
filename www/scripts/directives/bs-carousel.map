@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "bs-carousel.js",
+  "sourceRoot": "",
+  "sources": [
+    "bs-carousel.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,CAAA,UAAA;CAAA,CAEA,CAAsD,GAAtD,CAAO,EAAP,GAAA,CAAA;WACI;CAAA,CACE,IADF,EAAA,2jBAAA;CAAA,CAgBU,CAhBV,GAgBA,EAAA;CAhBA,CAkBM,CAAA,CAAN,CAAM,CAAN,CAAM,EAAC;CAnB2C;CAAtD,EAAsD;CAFtD"
+}

@@ -1,0 +1,23 @@
+body {
+  background: $cloud;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $mohave-font;
+}
+
+.vex-dialog-button-primary {
+  background: $teal !important;
+}
+
+.dropdown-toggle:hover {
+  cursor: pointer;
+}
+
+.carousel-control {
+  background-image: none !important;
+}
+
+.vex-content {
+  padding-bottom: 5px !important;
+}

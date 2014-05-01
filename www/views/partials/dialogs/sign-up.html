@@ -1,0 +1,13 @@
+<div class="container sign-up-dialog">
+    <h1 class="teal no-margin-top">Sign Up</h1>
+    <form name="signUpForm" ng-submit="signUserUp(signUpForm.$valid)" novalidate>
+        <input ng-model="user.firstname" type="text" placeholder="First Name" ng-minlength="3" ng-required/>
+        <input ng-model="user.lastname" type="text" placeholder="Last Name" ng-minlength="3" ng-required/>
+        <input ng-model="user.username" type="text" placeholder="Username" ng-minlength="5" ng-required/>
+        <input ng-model="user.email" type="email" placeholder="Email Address" ng-required/>
+        <span ng-bind="user.pwd_error" ng-hide="user.password == user.confirm" class="pumpkin"></span>
+        <input ng-model="user.password" type="password" placeholder="Password" ng-minlength="8" ng-required/>
+        <input ng-model="user.confirm" type="password" placeholder="Password Confirmation" ng-minlength="8" ng-required/>
+        <button class="btn btn-teal">Let's Go!</button>
+    </form>
+</div>

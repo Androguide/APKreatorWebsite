@@ -1,0 +1,9 @@
+node_modules
+dist
+data
+build
+persist
+.idea
+.tmp
+.sass-cache
+www/bower_components

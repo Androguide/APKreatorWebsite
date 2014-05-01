@@ -1,0 +1,152 @@
+@import 'mixins';
+@import 'variables';
+@import "reset";
+@import 'helpers';
+
+/*--------------------
+    Navigation Bar
+--------------------*/
+.navbar-apkreator {
+
+  @include setBorderRadius(0);
+  background: $teal;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 40px;
+
+    .navbar-right {
+      padding-top: 15px;
+    }
+  }
+
+  .navbar-toggle {
+    @include setBorderRadius(0);
+    margin-top: 20px;
+    border-color: $white;
+    outline: none;
+
+    .icon-bar {
+      background: $white;
+    }
+
+    &:hover {
+      border-color: $cloud;
+
+      .icon-bar {
+        background: $cloud;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+    font-family: mohave;
+    font-size: 1.25em;
+  }
+
+  .navbar-collapse.in {
+    border-top-color: $cloud;
+  }
+
+  .navbar-right li {
+
+    a {
+      text-transform: uppercase;
+
+      &:hover, &:active, &:focus, &.active a:hover {
+        color: $teal;
+      }
+    }
+
+    .dropdown-menu {
+      @media screen and (max-width: 768px) {
+        a {
+          color: $white !important;
+
+          &:hover {
+            color: $teal !important;
+          }
+        }
+      }
+    }
+
+    &.open {
+      a[data-toggle] {
+        color: $teal;
+      }
+    }
+  }
+} // end navigation bar
+
+
+/*-----------------
+  Card Directive
+------------------*/
+div.card {
+  border: 1px solid #d2d2d2;
+  box-shadow: 0 1px 0 #cfcfcf;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #eaeeef;
+
+  h3 {
+    border-bottom: 1px solid #d2d2d2;
+    display: inline-block;
+    padding-bottom: 3px;
+    padding-right: 7px;
+  }
+
+  p {
+    font-family: $aleo-font;
+    font-size: 1.15em;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+} // end card directive
+
+
+/*----------------
+  Sign-In Dialog
+----------------*/
+.sign-in-dialog, .sign-up-dialog {
+  input {
+    height: 35px;
+    padding-left: 4px;
+    margin-bottom: 15px;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    border: 1px solid #ababab;
+    font-family: $aleo-font;
+
+    &:focus {
+      padding-left: 0;
+      outline: none;
+      border: 1px solid $teal;
+    }
+
+    &.ng-invalid {
+      border: 2px solid $pumpkin;
+    }
+  }
+
+  a {
+    font-size: 0.9em;
+    font-family: $aleo-font;
+  }
+} // end sign-in dialog
+
+
+/*----------------------
+  App Creator Step n°1
+----------------------*/
+.app-creator-step-1 {
+  @extend .turquoise-bg;
+  text-align: center;
+  padding: 15% 5%;
+}
+
+// end app creator step n°1

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "app-creator.js",
+  "sourceRoot": "",
+  "sources": [
+    "app-creator.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;CAAA,CAAA,UAAA;CAAA,CAEA,CAA2D,GAA3D,CAAO,EAAqD,CAA5D,GAAA,GAAA;CAFA"
+}
