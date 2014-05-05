@@ -26,22 +26,23 @@
     };
     return hoodie.account.on('signup', function(user) {
       console.log("Signed-up: ", user);
-      hoodie.store.add("task", {
+      return hoodie.store.add("task", {
         firstname: $scope.user.firstname,
         lastname: $scope.user.lastname,
         username: $scope.user.username
       }).done(function(obj) {
-        return console.log("success: ", obj);
+        console.log("success: ", obj);
+        return $http.get('http://localhost:5000/send_confirmation/' + $scope.user.email).success(function(data) {
+          console.log(data);
+          vex.closeAll();
+          return vex.dialog.alert("Thank you for signing-up, " + $scope.user.username + ".<br>An email containing a confirmation link was sent to " + $scope.user.email + ", please click on it to confirm your account.");
+        }).error(function(data, status) {
+          console.log('Error while sending mail: ' + status + ' : ' + data);
+          return vex.dialog.alert("Sorry, there was an error (" + status + "). Please try again.");
+        });
       }).fail(function(obj) {
         return console.log("fail: ", obj);
       });
-      $http.get('http://localhost:5000/confirm_email/' + $scope.user.email).success(function(data) {
-        return console.log(data.message);
-      }).error(function(data, status) {
-        console.log('Error while sending mail: ' + status + ' : ' + data);
-        return vex.dialog.alert("Sorry, there was an error (" + status + "). Please try again.");
-      });
-      return vex.closeAll();
     });
   });
 

@@ -19,6 +19,7 @@ angular.module('ngApkreator').controller 'SignUpCtrl', ($scope, $http) ->
                 switch e.status
                     when 409
                         vex.dialog.alert "The email address " + $scope.user.email + " is already registered."
+                    else return
 
     hoodie.account.on 'signup', (user) ->
         console.log "Signed-up: ", user
@@ -30,16 +31,15 @@ angular.module('ngApkreator').controller 'SignUpCtrl', ($scope, $http) ->
         })
         .done (obj) ->
             console.log "success: ", obj
+            # Ask the API to send an email and confirmation link to the new user
+            $http.get('http://localhost:5000/send_confirmation/' + $scope.user.email)
+            .success (data) ->
+                console.log data
+                vex.closeAll()
+                vex.dialog.alert "Thank you for signing-up, " + $scope.user.username + ".<br>An email containing a confirmation link was sent to " + $scope.user.email + ", please click on it to confirm your account."
+            .error (data, status) ->
+                console.log 'Error while sending mail: ' + status + ' : ' + data
+                vex.dialog.alert "Sorry, there was an error (" + status + "). Please try again."
+
         .fail (obj) ->
             console.log "fail: ", obj
-
-        # Ask the API to send an email and confirmation link to the new user
-        $http.get('http://localhost:5000/confirm_email/' + $scope.user.email)
-        .success (data) ->
-            console.log data.message
-        .error (data, status) ->
-            console.log 'Error while sending mail: ' + status + ' : ' + data
-            vex.dialog.alert "Sorry, there was an error (" + status + "). Please try again."
-
-        # Close the dialog(s)
-        vex.closeAll()

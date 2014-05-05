@@ -188,7 +188,7 @@ under the License.
 
 
   app.get("/send_confirmation/:email", function(req, res) {
-    var mailOptions, responseHolder, rn;
+    var mailOptions, responseHolder, rn, sent;
     res.set("Access-Control-Allow-Origin", "*");
     rn = getCompliantRandomness();
     storage.setItem(req.params.email, {
@@ -200,24 +200,26 @@ under the License.
       to: req.params.email,
       subject: "Please Confirm Your Email Address ✔",
       text: "Welcome to APKreator! To start creating your amazing app(s), please click on the link below to confirm your email address: http://localhost:5000/confirm_account/" + req.params.email + "/" + rn,
-      html: "<b>Welcome to APKreator!</b><br>To start creating your amazing app(s), please click on the link below to confirm your email address:                 <br/><br/><center><a href=\"#\">http://localhost:5000/confirm_account/" + req.params.email + "/" + rn + "</a></center>"
+      html: "<b>Welcome to APKreator!</b><br>To start creating your amazing app(s), please click on the link below to confirm your email address:                         <br/><br/><center><a href=\"#\">http://localhost:5000/confirm_account/" + req.params.email + "/" + rn + "</a></center>"
     };
     responseHolder = {
       message: "Nope!"
     };
+    sent = false;
     smtpTransport.sendMail(mailOptions, function(error, response) {
       if (error) {
         console.log(error);
       } else {
         responseHolder = response;
         console.log("Message sent: " + response.message);
+        sent = true;
       }
-      smtpTransport.close();
+      return smtpTransport.close();
     });
-    res.writeHead(200, {
-      email: "sent: " + responseHolder.message
+    res.json({
+      email: "sent: " + sent
     });
-    res.end();
+    return res.end();
   });
 
   /*
@@ -226,24 +228,31 @@ under the License.
 
 
   app.get("/confirm_account/:email/:token", function(req, res) {
-    var stored, storedToken;
+    var stored;
     stored = storage.getItem(req.params.email);
-    storedToken = stored.token;
-    if (stored.confirmed) {
-      return res.writeHead(200, {
-        error: "account already confirmed"
+    if (!stored) {
+      res.set("Access-Control-Allow-Origin", "*");
+      return res.json({
+        error: "unknown email",
+        status: "-404"
       });
-    } else if (storedToken === req.params.token) {
+    } else if (stored.confirmed === true) {
+      res.set("Access-Control-Allow-Origin", "*");
+      return res.json({
+        error: "account already confirmed",
+        status: "-900"
+      });
+    } else if (stored.token === req.params.token) {
       storage.setItem(req.params.email, {
-        token: storedToken,
+        token: stored.token,
         confirmed: true
       });
-      return res.writeHead(200, {
-        confirmed: true
-      });
+      return res.redirect("http://localhost:6004/#/");
     } else {
-      return res.writeHead(200, {
-        confirmed: false
+      res.set("Access-Control-Allow-Origin", "*");
+      return res.json({
+        error: "bad request (email & token don't match)",
+        status: "-403"
       });
     }
   });
@@ -255,11 +264,18 @@ under the License.
 
   app.get("/is_confirmed/:email", function(req, res) {
     var stored;
+    res.set("Access-Control-Allow-Origin", "*");
     stored = storage.getItem(req.params.email);
-    console.log(stored.confirmed);
-    return res.writeHead(200, {
-      confirmed: stored.confirmed
-    });
+    if (stored) {
+      return res.json({
+        confirmed: stored.confirmed
+      });
+    } else {
+      return res.json({
+        error: "unknown email",
+        status: "-404"
+      });
+    }
   });
 
   smtpTransport = nodemailer.createTransport("SMTP", {

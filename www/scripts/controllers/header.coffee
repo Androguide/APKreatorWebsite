@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $compile) ->
+angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $compile, $http) ->
     hoodie = new Hoodie()
     $scope.account = {}
     $scope.dropdown = {label: "Sign In"}
@@ -44,14 +44,24 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
     $scope.signUp = ->
         dialog = $scope.compileHtml """<div ng-include ng-controller="SignUpCtrl" src="'views/partials/dialogs/sign-up.html'"></div>"""
         vex.open().append(dialog).bind "vexClose", ->
-            hoodie = new Hoodie()
-            if hoodie.account.username
-                $scope.account.dropdownItems = [
-                    {name: "My Account", "route": ""}
-                    {name: "My Apps", "route": ""}
-                    {name: "Sign Out", onclick: "signOut()"}
-                ]
-                $scope.dropdown.label = hoodie.account.username
+        hoodie = new Hoodie()
+        if hoodie.account.username
+            $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success (data) ->
+                if data.confirmed
+                    $scope.account.dropdownItems = [
+                        {name: "My Account", "route": ""}
+                        {name: "My Apps", "route": ""}
+                        {name: "Sign Out", onclick: "signOut()"}
+                    ]
+
+                    userInfos = hoodie.store.findAll("task")
+                    if userInfos.username
+                        userInfos.username
+                    else
+                        $scope.dropdown.label = hoodie.account.username
+                else
+                    console.log "not confirmed yet!"
+
                 $scope.$digest()
         return
 
