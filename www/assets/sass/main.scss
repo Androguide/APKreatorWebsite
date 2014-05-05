@@ -46,7 +46,7 @@
     font-size: 1.25em;
   }
 
-  .navbar-collapse.in {
+  .navbar-collapse.in, .navbar-collapse.collapsing {
     border-top-color: $cloud;
   }
 

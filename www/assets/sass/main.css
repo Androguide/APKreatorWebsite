@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5 {
     color: white;
     font-family: mohave;
     font-size: 1.25em; }
-  .navbar-apkreator .navbar-collapse.in {
+  .navbar-apkreator .navbar-collapse.in, .navbar-apkreator .navbar-collapse.collapsing {
     border-top-color: #ecf0f1; }
   .navbar-apkreator .navbar-right li a {
     text-transform: uppercase; }
