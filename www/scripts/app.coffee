@@ -17,13 +17,12 @@ angular.module('ngApkreator', [
             controller: 'AppCreatorCtrl'
 
     .when '/sign-in',
-            templateUrl: 'views/sign-in.html'
+            templateUrl: 'views/parts/dialogs/sign-in.html'
             controller: 'SignInCtrl'
 
     .when '/sign-up',
-            templateUrl: 'views/sign-up.html'
+            templateUrl: 'views/parts/dialogs/sign-up.html'
             controller: 'SignUpCtrl'
 
     .otherwise
             redirectTo: '/'
-

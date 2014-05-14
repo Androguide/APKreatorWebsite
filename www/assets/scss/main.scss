@@ -60,6 +60,12 @@
       }
     }
 
+    &.active a {
+      text-decoration: none;
+      background-color: #eeeeee;
+      color: $teal;
+    }
+
     .dropdown-menu {
       @media screen and (max-width: 768px) {
         a {
@@ -78,19 +84,20 @@
       }
     }
   }
-} // end navigation bar
+}
 
+// end navigation bar
 
 /*-----------------
   Card Directive
 ------------------*/
-div.card {
+div.ng-card {
   border: 1px solid #d2d2d2;
   box-shadow: 0 1px 0 #cfcfcf;
   border-radius: 3px;
   padding: 10px;
   margin-bottom: 15px;
-  background: #eaeeef;
+  background: #feffff;
 
   h3 {
     border-bottom: 1px solid #d2d2d2;
@@ -105,8 +112,60 @@ div.card {
     padding-right: 5px;
     padding-left: 5px;
   }
-} // end card directive
 
+  i {
+    margin-right: 5px;
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 72px;
+  }
+
+  .image-holder img {
+    margin: 20px auto 10px auto;
+    max-height: 188px;
+    -webkit-box-shadow: 0 0 40px -10px #000;
+    -moz-box-shadow: 0 0 40px -10px #000;
+    box-shadow: 0 0 40px -10px #000;
+  }
+
+  div.row-fluid div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  input[type=text] {
+    @media screen and (min-width: 768px) {
+      max-width: 400px;
+    }
+
+    height: 35px;
+    padding-left: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: block;
+    border: 1px solid #ababab;
+    font-family: $aleo-font;
+
+    &:focus {
+      padding-left: 0;
+      outline: none;
+      border: 1px solid $teal;
+    }
+
+    &.ng-invalid {
+      border: 2px solid $pumpkin;
+    }
+  }
+
+  textarea.ng-invalid {
+    border: 2px solid $pumpkin;
+  }
+}
+
+// end card directive
 
 /*----------------
   Sign-In Dialog
@@ -137,16 +196,38 @@ div.card {
     font-size: 0.9em;
     font-family: $aleo-font;
   }
-} // end sign-in dialog
-
-
-/*----------------------
-  App Creator Step n°1
-----------------------*/
-.app-creator-step-1 {
-  @extend .turquoise-bg;
-  text-align: center;
-  padding: 15% 5%;
 }
 
-// end app creator step n°1
+// end sign-in dialog
+
+/*----------------------
+  App Creator
+----------------------*/
+.app-creator {
+  blockquote {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+
+  div.row {
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+    &.main-row {
+      margin-bottom: 20px;
+    }
+  }
+
+  .btn-belize {
+    margin-bottom: 0;
+  }
+
+  .ng-card textarea {
+    min-height: 114px;
+  }
+
+  .website {
+    margin-top: 23px;
+    margin-bottom: 22px !important;
+  }
+}

@@ -6,7 +6,7 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
     $scope.dropdown = {label: "Sign In"}
     $scope.username = hoodie.account.username
 
-    $scope.headerMenuItems = [
+    $rootScope.headerMenuItems = [
         {name: "Home", url: "#/"}
         {name: "App Creator", url: "#/app-creator"}
         {name: "Contact", url: "#"}
@@ -28,7 +28,7 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
 
     # Show sign-in dialog and ng-include its html from a separate template
     $scope.signIn = ->
-        dialog = $scope.compileHtml """<div ng-include ng-controller="SignInCtrl" src="'views/partials/dialogs/sign-in.html'"></div>"""
+        dialog = $scope.compileHtml """<div ng-include ng-controller="SignInCtrl" src="'views/parts/dialogs/sign-in.html'"></div>"""
         vex.open().append(dialog).bind "vexClose", ->
             hoodie = new Hoodie()
             if hoodie.account.username
@@ -42,27 +42,27 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
         return # this explicit return is mandatory, otherwise Coffee will return the html, causing angular to throw a security error when there really isn't.
 
     $scope.signUp = ->
-        dialog = $scope.compileHtml """<div ng-include ng-controller="SignUpCtrl" src="'views/partials/dialogs/sign-up.html'"></div>"""
+        dialog = $scope.compileHtml """<div ng-include ng-controller="SignUpCtrl" src="'views/parts/dialogs/sign-up.html'"></div>"""
         vex.open().append(dialog).bind "vexClose", ->
-        hoodie = new Hoodie()
-        if hoodie.account.username
-            $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success (data) ->
-                if data.confirmed
-                    $scope.account.dropdownItems = [
-                        {name: "My Account", "route": ""}
-                        {name: "My Apps", "route": ""}
-                        {name: "Sign Out", onclick: "signOut()"}
-                    ]
+            hoodie = new Hoodie()
+            if hoodie.account.username
+                $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success (data) ->
+                    if data.confirmed
+                        $scope.account.dropdownItems = [
+                            {name: "My Account", "route": ""}
+                            {name: "My Apps", "route": ""}
+                            {name: "Sign Out", onclick: "signOut()"}
+                        ]
 
-                    userInfos = hoodie.store.findAll("task")
-                    if userInfos.username
-                        userInfos.username
+                        userInfos = hoodie.store.findAll("task")
+                        if userInfos.username
+                            userInfos.username
+                        else
+                            $scope.dropdown.label = hoodie.account.username
                     else
-                        $scope.dropdown.label = hoodie.account.username
-                else
-                    console.log "not confirmed yet!"
+                        console.log "not confirmed yet!"
 
-                $scope.$digest()
+                    $scope.$digest()
         return
 
     # Sign the user out and update the dropdown

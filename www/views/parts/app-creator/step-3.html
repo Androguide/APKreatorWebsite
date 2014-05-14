@@ -1,0 +1,25 @@
+<!--suppress HtmlUnknownAttribute -->
+<div class="app-creator">
+    <div class="container">
+        <blockquote class="teal">
+            <h2 class="teal">Step n°3: API Keys</h2>
+        </blockquote>
+
+        <div class="row main-row">
+
+            <!-- YOUTUBE -->
+            <div class="col-sm-8" ng-hide="!hasYoutube && !hasGplus">
+                <div class="ng-card">
+                    <div class="clearfix">
+                        <h3 class="teal no-margin-top">Google API Key</h3>
+
+                        <p>In order for your app to access your {{features_text}} data, you will need to register an API
+                            Key with Google.<br/>
+                            This is absolutely free and only takes a minute. <a href="">Click here to learn more</a></p>
+                        <input ng-model="config.apiKey" type="text" placeholder="065sdf65s54f44ff65ds644f"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

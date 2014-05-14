@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="vendor/vex-2.0.1/css/vex.css"/>
     <link rel="stylesheet" href="vendor/vex-2.0.1/css/vex-theme-os.css"/>
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="assets/fonts/stylesheet.css"/>
-    <link rel="stylesheet" href="assets/sass/main.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
     <!-- endbuild -->
 </head>
 <body data-ng-app="ngApkreator">
@@ -31,30 +31,12 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div data-ng-include="" data-ng-controller="HeaderCtrl" src="'views/header.html'"></div>
+<div data-ng-include="" src="'views/parts/header.html'" data-ng-controller="HeaderCtrl"></div>
 
 <!-- Add your site or application content here -->
 <div data-ng-view=""></div>
 
-<div data-ng-include src="'views/footer.html'"></div>
-
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-<!--<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-</script>-->
+<div data-ng-include src="'views/parts/footer.html'"></div>
 
 <!--[if lt IE 9]>
 <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -74,17 +56,17 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <!-- endbower -->
+
 <script src="vendor/vex-2.0.1/js/vex.combined.min.js"></script>
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
-<script src="scripts/controllers/header.js"></script>
-<script src="scripts/controllers/sign-in.js"></script>
-<script src="scripts/controllers/sign-up.js"></script>
+<script src="scripts/controllers/parts/header.js"></script>
+<script src="scripts/controllers/parts/dialogs/sign-in.js"></script>
+<script src="scripts/controllers/parts/dialogs/sign-up.js"></script>
 <script src="scripts/controllers/app-creator.js"></script>
-<script src="scripts/directives/bs-carousel.js"></script>
 <script src="scripts/directives/card.js"></script>
 <!-- endbuild -->
 <script>vex.defaultOptions.className = 'vex-theme-os';</script>

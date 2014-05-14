@@ -1,0 +1,148 @@
+<div class="app-creator">
+    <div class="container">
+        <blockquote class="belize">
+            <h2 class="belize">Step n°2: Configure your App</h2>
+        </blockquote>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="ng-card">
+                    <div>
+                        <h3 class="belize no-margin-top">App Name</h3>
+
+                        <p>This defines the name of your app, which will appear in the user's app drawer and in the
+                            action-bar of your application</p>
+                        <input ng-model="config.appName" type="text" placeholder="My App&#8230;"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="ng-card">
+                    <div>
+                        <h3 class="belize no-margin-top">Package Name</h3>
+
+                        <p>The unique identifier of your app. Use a reverse-url scheme with at least 3 parts:
+                            <i>country.company.appname</i></p>
+                        <input ng-model="config.packageName" type="text" placeholder="com.apkreator.demoapp&#8230;"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 feat-disabled">
+                <div class="ng-card">
+                    <div>
+                        <h3 class="belize no-margin-top">Color Scheme</h3>
+
+                        <p>Defines the main color of your app, which will be found in the action-bar, on text titles, on
+                            touch feedback, etc&#8230;</p>
+
+                        <div class="hidden-xs hidden-md hidden-lg" style="height: 20px"></div>
+                        <input ng-model="config.colorScheme" type="text" placeholder="#1ABC9C&#8230;"/>
+                        <div class="hidden-xs hidden-md hidden-lg" style="height: 22px"></div>
+                    </div>
+                </div>
+
+                <div class="ng-card hidden-md hidden-lg">
+                    <div>
+                        <h3 class="belize no-margin-top">Presentation</h3>
+
+                        <p>Write a couple sentences to present yourself and/or your application</p>
+                        <textarea name="presentation" ng-model="presentation" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 hidden-md hidden-lg">
+                <div class="ng-card">
+                    <div>
+                        <h3 class="belize no-margin-top">Icon</h3>
+
+                        <p>The icon of your app, which will be visible in the user's app drawer and in the action-bar of
+                            your application</p>
+                        <input type="text" placeholder="http://i.imgur.com/zg9z8r7.png"/>
+                        <button class="btn btn-belize">Load</button>
+                    </div>
+                    <div class="image-holder">
+                        <img class="img-responsive" ng-src="http://i.imgur.com/zg9z8r7.png" ng-show="imageLoaded"
+                             alt="Example App Icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 hidden-md hidden-lg">
+                <div class="ng-card">
+                    <div class="clearfix">
+                        <div class="row-fluid clearfix">
+                            <div class="col-xs-8">
+                                <h3 class="belize no-margin-top">Website</h3>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="flat-switch pull-right">
+                                    <input type="checkbox" value="1" id="has_website" ng-model="website" ng-change="hasWebsite = !hasWebsite"/>
+                                    <label for="has_website"></label>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>If you have a website, please input its url below.<br/>A link to your website will be added in the sliding drawer of your application.</p>
+                        <input class="website" type="text" placeholder="http://apkreator.com&#8230;" ng-disabled="!hasWebsite"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 hidden-xs hidden-sm">
+                <div class="ng-card">
+                    <div>
+                        <h3 class="belize no-margin-top">Presentation</h3>
+
+                        <p>Write a couple sentences to present yourself and/or your application</p>
+                        <textarea name="presentation" ng-model="presentation" cols="30" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 hidden-xs hidden-sm">
+                <div class="ng-card">
+                    <div>
+                        <h3 class="belize no-margin-top">Icon</h3>
+
+                        <p>The icon of your app, which will be visible in the user's app drawer and in the action-bar of
+                            your application</p>
+                        <input type="text" placeholder="http://i.imgur.com/zg9z8r7.png&#8230;"/>
+                        <button class="btn btn-belize">Load</button>
+                    </div>
+                    <div class="image-holder">
+                        <img class="img-responsive" ng-src="http://i.imgur.com/zg9z8r7.png" ng-show="imageLoaded"
+                             alt="Example App Icon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 hidden-xs hidden-sm">
+                <div class="ng-card">
+                    <div class="clearfix">
+                        <div class="row-fluid clearfix">
+                            <div class="col-xs-8">
+                                <h3 class="belize no-margin-top">Website</h3>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="flat-switch pull-right belize">
+                                    <input type="checkbox" value="1" id="has_website" ng-model="website" ng-change="hasWebsite = !hasWebsite"/>
+                                    <label for="has_website"></label>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>If you have a website, please input its url below.<br/>A link to your website will be added in the sliding drawer of your application.</p>
+                        <input class="website" type="text" placeholder="http://apkreator.com&#8230;" ng-disabled="!hasWebsite"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

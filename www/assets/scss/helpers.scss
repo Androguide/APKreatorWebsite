@@ -1,0 +1,188 @@
+@import "variables";
+@import "mixins";
+
+@mixin underline($color) {
+  display: inline-block;
+  border-bottom: 1px solid $color;
+}
+
+// FONTS
+.aleo {
+  font-family: $aleo-font;
+}
+
+.mohave {
+  font-family: $mohave-font;
+}
+
+// BACKGROUND COLORS
+.belize-bg {
+  background: $belize;
+}
+
+.asphalt-bg {
+  background: $asphalt;
+}
+
+.amethyst-bg {
+  background: $amethyst;
+}
+
+.turquoise-bg {
+  background: $turquoise;
+}
+
+.nephrytis-bg {
+  background: $nephrytis;
+}
+
+.pumpkin-bg {
+  background: $pumpkin;
+}
+
+// TEXT COLORS
+.white {
+  color: $white !important;
+}
+
+.belize {
+  color: $belize !important;
+}
+
+.teal {
+  color: $teal !important;
+}
+
+.amethyst {
+  color: $amethyst !important;
+}
+
+.asphalt {
+  color: $asphalt !important;
+}
+
+.cloud {
+  color: $cloud !important;
+}
+
+.nephrytis {
+  color: $nephrytis !important;
+}
+
+.pumpkin {
+  color: $pumpkin !important;
+}
+
+// BUTTONS
+.btn-teal {
+  @include flatButton($teal, $teal-darker, 42px);
+}
+
+.btn-teal-big {
+  @include flatButton($teal, $teal-darker, 68px);
+  font-size: 2.5em;
+}
+
+.btn-turquoise {
+  @include flatButton($turquoise, $teal, 42px);
+}
+
+.btn-belize {
+  @include flatButton($belize, $belize_darker, 42px);
+}
+
+.btn-turquoise-big {
+  @include flatButton($turquoise, $teal, 68px);
+  font-size: 2.5em;
+}
+
+.btn-pumpkin-big {
+  @include flatButton(#f39c12, #b46712, 68px);
+  font-size: 2.5em;
+}
+
+.underline-teal {
+  @include underline($teal);
+}
+
+// BLOCKQUOTES
+blockquote.teal {
+  border-left-color: $teal;
+}
+
+blockquote.belize {
+  border-left-color: $belize;
+}
+
+// POSITIONING
+.blk-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+// CHECKBOX
+.flat-switch {
+  width: 60px;
+  height: 30px;
+  margin: -8px 0 10px;
+  position: relative;
+
+  input[type=checkbox] {
+    visibility: hidden;
+  }
+
+  div {
+    width: 100%;
+    height: 100%;
+    background: $teal;
+    position: relative;
+    top: -15px;
+  }
+
+  label {
+    display: block;
+    width: 26px;
+    height: 21px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    z-index: 1;
+    left: 4px;
+    background: #fffffd;
+
+    &:before {
+      color: #ccc;
+      content: '|||';
+      font-size: 12px;
+      letter-spacing: 1px;
+      position: absolute;
+      left: 7px;
+      top: 11px;
+      line-height: 0;
+    }
+  }
+
+  &.belize div {
+    background: $belize;
+  }
+
+  input[type=checkbox]:checked {
+    & ~ div {
+      background: $pumpkin;
+    }
+
+    & ~ label {
+      left: 30px;
+    }
+  }
+}

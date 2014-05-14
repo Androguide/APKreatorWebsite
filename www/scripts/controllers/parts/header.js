@@ -9,7 +9,7 @@
       label: "Sign In"
     };
     $scope.username = hoodie.account.username;
-    $scope.headerMenuItems = [
+    $rootScope.headerMenuItems = [
       {
         name: "Home",
         url: "#/"
@@ -48,7 +48,7 @@
     }
     $scope.signIn = function() {
       var dialog;
-      dialog = $scope.compileHtml("<div ng-include ng-controller=\"SignInCtrl\" src=\"'views/partials/dialogs/sign-in.html'\"></div>");
+      dialog = $scope.compileHtml("<div ng-include ng-controller=\"SignInCtrl\" src=\"'views/parts/dialogs/sign-in.html'\"></div>");
       vex.open().append(dialog).bind("vexClose", function() {
         hoodie = new Hoodie();
         if (hoodie.account.username) {
@@ -71,37 +71,38 @@
     };
     $scope.signUp = function() {
       var dialog;
-      dialog = $scope.compileHtml("<div ng-include ng-controller=\"SignUpCtrl\" src=\"'views/partials/dialogs/sign-up.html'\"></div>");
-      vex.open().append(dialog).bind("vexClose", function() {});
-      hoodie = new Hoodie();
-      if (hoodie.account.username) {
-        $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success(function(data) {
-          var userInfos;
-          if (data.confirmed) {
-            $scope.account.dropdownItems = [
-              {
-                name: "My Account",
-                "route": ""
-              }, {
-                name: "My Apps",
-                "route": ""
-              }, {
-                name: "Sign Out",
-                onclick: "signOut()"
+      dialog = $scope.compileHtml("<div ng-include ng-controller=\"SignUpCtrl\" src=\"'views/parts/dialogs/sign-up.html'\"></div>");
+      vex.open().append(dialog).bind("vexClose", function() {
+        hoodie = new Hoodie();
+        if (hoodie.account.username) {
+          return $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success(function(data) {
+            var userInfos;
+            if (data.confirmed) {
+              $scope.account.dropdownItems = [
+                {
+                  name: "My Account",
+                  "route": ""
+                }, {
+                  name: "My Apps",
+                  "route": ""
+                }, {
+                  name: "Sign Out",
+                  onclick: "signOut()"
+                }
+              ];
+              userInfos = hoodie.store.findAll("task");
+              if (userInfos.username) {
+                userInfos.username;
+              } else {
+                $scope.dropdown.label = hoodie.account.username;
               }
-            ];
-            userInfos = hoodie.store.findAll("task");
-            if (userInfos.username) {
-              userInfos.username;
             } else {
-              $scope.dropdown.label = hoodie.account.username;
+              console.log("not confirmed yet!");
             }
-          } else {
-            console.log("not confirmed yet!");
-          }
-          return $scope.$digest();
-        });
-      }
+            return $scope.$digest();
+          });
+        }
+      });
     };
     $scope.signOut = function() {
       hoodie.account.signOut();

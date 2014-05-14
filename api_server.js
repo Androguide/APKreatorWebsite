@@ -152,7 +152,7 @@ under the License.
     app.use(express["static"](__dirname + "/www"));
   });
 
-  app.get("/app/:appname" + "/package/:package" + "/youtube/:youtube" + "/color/:color" + "/icon/:icon" + "/twitter/:twitter" + "/facebook/:facebook" + "/gplus/:gplus" + "/welcome_title/:welcome_title" + "/welcome_desc/:welcome_desc" + "/api_key/:api_key", function(req, res) {
+  app.get("/app/:appname" + "/package/:package" + "/color/:color" + "/icon/:icon" + "/youtube/:youtube" + "/gplus/:gplus" + "/twitter/:twitter" + "/facebook/:facebook" + "/welcome_title/:welcome_title" + "/welcome_desc/:welcome_desc" + "/api_key/:api_key", function(req, res) {
     var configXml, iconurl, random;
     APP_NAME = req.params.appname;
     PACKAGE_NAME = req.params["package"];

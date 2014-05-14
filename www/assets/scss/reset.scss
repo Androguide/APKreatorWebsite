@@ -1,9 +1,20 @@
 body {
   background: $cloud;
+  padding-top: 78px;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: $mohave-font;
+}
+
+.vex-dialog-message, .vex-dialog-prompt-input {
+  font-family: $aleo-font !important;
+  font-size: 1.05em;
+}
+
+.vex-dialog-button {
+  font-family: $mohave-font !important;
+  font-size: 1em !important;
 }
 
 .vex-dialog-button-primary {

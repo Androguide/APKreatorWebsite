@@ -4,14 +4,14 @@
   border-radius: $amount;
 }
 
-@mixin flatButton($color, $border-color) {
+@mixin flatButton($color, $border-color, $height) {
   font-family: $mohave-font;
   position: relative;
   display: block;
   vertical-align: top;
   max-width: 400px;
   width: 100%;
-  height: 42px;
+  height: $height;
   padding: 2px 0 0 0;
   font-size: 22px;
   color: $white;
