@@ -87,7 +87,12 @@ This function will redirect the user to his compiled apk when the build is compl
 ###
 done = (error, stdout, stderr) ->
     console.log stdout
-    response.redirect "out/" + randomHolder + "/" + PACKAGE_NAME + ".apk"
+    response.json
+        apkUrl: "out/" + randomHolder + "/" + PACKAGE_NAME + ".apk"
+        stdOut: stdout
+        stdErr: stderr
+    response.end()
+
     exec "rm -f " + randomHolder + ".sh"
     return
 
@@ -114,7 +119,8 @@ app.configure ->
     app.use express.static(__dirname + "/www")
     return
 
-app.get "/app/:appname" + "/package/:package" + "/color/:color" + "/icon/:icon" + "/youtube/:youtube" + "/gplus/:gplus" + "/twitter/:twitter" + "/facebook/:facebook" + "/welcome_title/:welcome_title" + "/welcome_desc/:welcome_desc" + "/api_key/:api_key", (req, res) ->
+app.get "/app/:appname" + "/package/:package" + "/color/:color" + "/icon/:icon" + "/youtube/:youtube" + "/gplus/:gplus" + "/twitter/:twitter" + "/facebook/:facebook" +  "/website/:website" + "/welcome_title/:welcome_title" + "/welcome_desc/:welcome_desc" + "/api_key/:api_key", (req, res) ->
+    res.set "Access-Control-Allow-Origin", "*"
     APP_NAME = req.params.appname
     PACKAGE_NAME = req.params.package
     YOUTUBE_NAME = req.params.youtube
@@ -149,8 +155,15 @@ app.get "/app/:appname" + "/package/:package" + "/color/:color" + "/icon/:icon" 
     exec "sed -i 's/colorscheme=\"placeholder\"" + "/colorscheme=\"" + COLOR_SCHEME + "\"/g' " + random + ".sh", puts
     exec "sed -i 's/url=\"placeholder\"" + "/url=\"" + iconurl + "\"/g' " + random + ".sh", puts
     exec "sed -i 's/random=\"placeholder\"" + "/random=\"" + random + "\"/g' " + random + ".sh", puts
-    exec "./" + random + ".sh", done
-    return
+    exec "./" + random + ".sh", (error, stdout, stderr) ->
+        console.log stdout
+        response.json
+            apkUrl: "out/" + randomHolder + "/" + PACKAGE_NAME + ".apk"
+            stdOut: stdout
+            stdErr: stderr
+        response.end()
+
+        exec "rm -f " + randomHolder + ".sh"
 
 ###
 Sends an email with an account confirmation link/token

@@ -4,7 +4,7 @@ angular.module('ngApkreator', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
 ]).config ($routeProvider) ->
     $routeProvider
 

@@ -31,7 +31,7 @@
 
                         <p>This feature allows users to browse through your YouTube channel &amp; watch your videos
                             directly from your app, with no login required.</p>
-                        <input ng-model="features.youtube" type="text" placeholder="YouTube channel name&#8230;"
+                        <input id="youtube" ng-model="features.youtube" type="text" placeholder="YouTube channel name&#8230;"
                                ng-disabled="!hasYoutube"/>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
 
                         <p>This feature allows users to browse through all your Google+ posts and to read them directly
                             from your application, with no login required.</p>
-                        <input ng-model="features.gplus" type="text" placeholder="Google+ username&#8230;"
+                        <input id="gplus" ng-model="features.gplus" type="text" placeholder="Google+ username&#8230;"
                                ng-disabled="!hasGplus"/>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
 </div>
 
 <!-- STEP 2 -->
-<div class="app-creator">
+<div class="app-creator step-2">
     <div class="container">
         <blockquote class="belize">
             <h2 class="belize">Step n°2: Configure your App</h2>
@@ -116,7 +116,7 @@
 
                         <p>The unique identifier of your app. Use a reverse-url scheme with at least 3 parts:
                             <i>country.company.appname</i></p>
-                        <input ng-model="config.packageName" type="text" placeholder="com.apkreator.demoapp&#8230;"/>
+                        <input id="packageName" ng-model="config.packageName" type="text" placeholder="com.apkreator.demoapp&#8230;"/>
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@
                             touch feedback, etc&#8230;</p>
 
                         <div class="hidden-xs hidden-md hidden-lg" style="height: 20px"></div>
-                        <input ng-model="config.colorScheme" type="text" placeholder="#1ABC9C&#8230;"/>
+                        <input id="colorScheme" ng-model="config.colorScheme" type="text" placeholder="#1ABC9C&#8230;"/>
 
                         <div class="hidden-xs hidden-md hidden-lg" style="height: 22px"></div>
                     </div>
@@ -141,7 +141,8 @@
                         <h3 class="belize no-margin-top">Presentation</h3>
 
                         <p>Write a couple sentences to present yourself and/or your application</p>
-                        <textarea id="presentation" name="presentation" ng-model="presentation" cols="30" rows="3"></textarea>
+                        <textarea name="presentation" ng-model="presentation" cols="30"
+                                  rows="3"></textarea>
                     </div>
                 </div>
             </div>
@@ -153,7 +154,7 @@
 
                         <p>The icon of your app, which will be visible in the user's app drawer and in the action-bar of
                             your application</p>
-                        <input type="text" placeholder="http://i.imgur.com/zg9z8r7.png" ng-model="config.icon"/>
+                        <input name="icon" type="text" placeholder="http://i.imgur.com/zg9z8r7.png" ng-model="config.icon"/>
                         <button class="btn btn-belize">Load</button>
                     </div>
                     <div class="image-holder">
@@ -183,7 +184,7 @@
 
                         <p>If you have a website, please input its url below.<br/>A link to your website will be added
                             in the sliding drawer of your application.</p>
-                        <input class="website" type="text" placeholder="http://apkreator.com&#8230;"
+                        <input class="website" name="website" type="text" ng-model="config.website" placeholder="http://apkreator.com&#8230;"
                                ng-disabled="!hasWebsite"/>
                     </div>
                 </div>
@@ -197,7 +198,7 @@
                         <h3 class="belize no-margin-top">Presentation</h3>
 
                         <p>Write a couple sentences to present yourself and/or your application</p>
-                        <textarea name="presentation" ng-model="presentation" cols="30" rows="3"></textarea>
+                        <textarea name="presentation" ng-model="config.presentation" cols="30" rows="3"></textarea>
                     </div>
                 </div>
             </div>
@@ -209,7 +210,7 @@
 
                         <p>The icon of your app, which will be visible in the user's app drawer and in the action-bar of
                             your application</p>
-                        <input type="text" placeholder="http://i.imgur.com/zg9z8r7.png&#8230;" ng-model="config.icon"/>
+                        <input name="icon" type="text" placeholder="http://i.imgur.com/zg9z8r7.png&#8230;" ng-model="config.icon"/>
                         <button class="btn btn-belize">Load</button>
                     </div>
                     <div class="image-holder">
@@ -239,7 +240,7 @@
 
                         <p>If you have a website, please input its url below.<br/>A link to your website will be added
                             in the sliding drawer of your application.</p>
-                        <input class="website" type="text" placeholder="http://apkreator.com&#8230;"
+                        <input class="website" name="website" type="text" ng-model="config.website" placeholder="http://apkreator.com&#8230;"
                                ng-disabled="!hasWebsite"/>
                     </div>
                 </div>
@@ -249,29 +250,30 @@
 </div>
 
 <!-- STEP 3 -->
-<div class="app-creator">
+<div class="app-creator step-3">
     <div class="container">
-        <blockquote class="teal">
-            <h2 class="teal">Step n°3: API Keys</h2>
+        <blockquote class="carrot">
+            <h2 class="carrot">Step n°3: API Keys</h2>
         </blockquote>
 
         <div class="row main-row">
 
-            <!-- YOUTUBE -->
             <div class="col-sm-8" ng-show="hasYoutube || hasGplus">
                 <div class="ng-card">
                     <div class="clearfix">
-                        <h3 class="teal no-margin-top">Google API Key</h3>
+                        <h3 class="carrot no-margin-top">Google API Key</h3>
 
                         <p>In order for your app to access your {{features_text}} data, you will need to register an API
                             Key with Google.<br/>
                             This is absolutely free and only takes a minute. <a href="">Click here to learn more</a></p>
-                        <input ng-model="config.apiKey" type="text" placeholder="065sdf65s54f44ff65ds644f"/>
+                        <input id="apiKey" ng-model="config.apiKey" type="text" placeholder="065sdf65s54f44ff65ds644f"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-        <center><button class="btn-teal-big" ng-click="generateAPIRequest()">GO!</button></center>
+<br/><br/>
+<center>
+    <button class="btn-teal-big" ng-click="generateAPIRequest()">GO!</button>
+</center>

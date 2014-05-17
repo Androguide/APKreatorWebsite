@@ -121,6 +121,9 @@ div.ng-card {
     width: 100%;
     max-width: 100%;
     min-height: 72px;
+    border: 1px solid #ababab;
+    font-family: $aleo-font;
+    font-size: 1.1em;
   }
 
   .image-holder img {
@@ -146,6 +149,7 @@ div.ng-card {
     margin-bottom: 15px;
     width: 100%;
     display: block;
+    font-size: 1.1em;
     border: 1px solid #ababab;
     font-family: $aleo-font;
 
@@ -209,13 +213,14 @@ div.ng-card {
     margin-top: 30px;
   }
 
+  div.ng-card {
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 5px;
+    }
+  }
+
   div.row {
     margin-top: 15px;
-    margin-bottom: 35px;
-
-    &.main-row {
-      margin-bottom: 20px;
-    }
   }
 
   .btn-belize {
@@ -229,5 +234,34 @@ div.ng-card {
   .website {
     margin-top: 23px;
     margin-bottom: 22px !important;
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      margin-top: 10px;
+      margin-bottom: 13px !important;
+    }
+  }
+
+  input {
+    color: $teal;
+  }
+
+  &.step-2 {
+    input, textarea {
+      color: $belize;
+
+      &:focus {
+        border: 1px solid $belize !important;
+      }
+    }
+  }
+
+  &.step-3 {
+    input, textarea {
+      color: $carrot;
+
+      &:focus {
+        border: 1px solid $carrot !important;
+      }
+    }
   }
 }

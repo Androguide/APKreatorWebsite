@@ -73,6 +73,10 @@
   color: $pumpkin !important;
 }
 
+.carrot {
+  color: $carrot !important;
+}
+
 // BUTTONS
 .btn-teal {
   @include flatButton($teal, $teal-darker, 42px);
@@ -112,6 +116,10 @@ blockquote.teal {
 
 blockquote.belize {
   border-left-color: $belize;
+}
+
+blockquote.carrot {
+  border-left-color: $carrot;
 }
 
 // POSITIONING

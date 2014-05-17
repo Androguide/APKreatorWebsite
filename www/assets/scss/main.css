@@ -73,6 +73,9 @@ h1, h2, h3, h4, h5 {
 .pumpkin {
   color: #d35400 !important; }
 
+.carrot {
+  color: #e67e22 !important; }
+
 .btn-teal {
   font-family: mohave, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: relative;
@@ -284,6 +287,9 @@ blockquote.teal {
 blockquote.belize {
   border-left-color: #2980b9; }
 
+blockquote.carrot {
+  border-left-color: #e67e22; }
+
 .blk-center {
   display: block;
   margin-left: auto;
@@ -411,7 +417,10 @@ div.ng-card {
   div.ng-card textarea {
     width: 100%;
     max-width: 100%;
-    min-height: 72px; }
+    min-height: 72px;
+    border: 1px solid #ababab;
+    font-family: aleo, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1em; }
   div.ng-card .image-holder img {
     margin: 20px auto 10px auto;
     max-height: 188px;
@@ -427,6 +436,7 @@ div.ng-card {
     margin-bottom: 15px;
     width: 100%;
     display: block;
+    font-size: 1.1em;
     border: 1px solid #ababab;
     font-family: aleo, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     @media screen and (min-width: 768px) {
@@ -469,11 +479,11 @@ div.ng-card {
 .app-creator blockquote {
   margin-bottom: 0;
   margin-top: 30px; }
+@media screen and (min-width: 1200px) {
+  .app-creator div.ng-card {
+    margin-bottom: 5px; } }
 .app-creator div.row {
-  margin-top: 15px;
-  margin-bottom: 35px; }
-  .app-creator div.row.main-row {
-    margin-bottom: 20px; }
+  margin-top: 15px; }
 .app-creator .btn-belize {
   margin-bottom: 0; }
 .app-creator .ng-card textarea {
@@ -481,3 +491,17 @@ div.ng-card {
 .app-creator .website {
   margin-top: 23px;
   margin-bottom: 22px !important; }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .app-creator .website {
+      margin-top: 10px;
+      margin-bottom: 13px !important; } }
+.app-creator input {
+  color: #16a085; }
+.app-creator.step-2 input, .app-creator.step-2 textarea {
+  color: #2980b9; }
+  .app-creator.step-2 input:focus, .app-creator.step-2 textarea:focus {
+    border: 1px solid #2980b9 !important; }
+.app-creator.step-3 input, .app-creator.step-3 textarea {
+  color: #e67e22; }
+  .app-creator.step-3 input:focus, .app-creator.step-3 textarea:focus {
+    border: 1px solid #e67e22 !important; }
