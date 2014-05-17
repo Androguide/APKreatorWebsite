@@ -2,7 +2,7 @@
 (function() {
   'use strict';
   angular.module('ngApkreator').controller('AppCreatorCtrl', function($scope, $rootScope, $compile, $http) {
-    var saveToLocalStorage;
+    var dialog, hoodie, saveToLocalStorage;
     $rootScope.headerMenuItems = [
       {
         name: "Home",
@@ -18,6 +18,43 @@
         "class": ""
       }
     ];
+    hoodie = new Hoodie();
+    $scope.isAuthorized = false;
+    if (hoodie.account.username) {
+      $http.get('http://localhost:5000/is_confirmed/' + hoodie.account.username).success(function(data) {
+        console.log("is confirmed: ", data.confirmed);
+        if (data.confirmed) {
+          return $scope.isAuthorized = true;
+        } else {
+          return vex.dialog.alert("Please confirm your account by clicking on the link that was sent to you by email");
+        }
+      }).error(function(data, status) {
+        return console.log("error", data, status);
+      });
+    } else {
+      dialog = $compile("<div ng-include ng-controller=\"SignInCtrl\" src=\"'views/parts/dialogs/sign-in.html'\"></div>");
+      vex.open().append(dialog($scope)).bind("vexClose", function() {
+        hoodie = new Hoodie();
+        if (hoodie.account.username) {
+          $rootScope.account.dropdownItems = [
+            {
+              name: "My Account",
+              "route": ""
+            }, {
+              name: "My Apps",
+              "route": ""
+            }, {
+              name: "Sign Out",
+              onclick: "signOut()"
+            }
+          ];
+          $scope.dropdown.label = hoodie.account.username;
+          return $scope.$digest();
+        } else {
+          return window.location = "/#/";
+        }
+      });
+    }
     $scope.hasYoutube = true;
     $scope.hasGplus = true;
     $scope.hasWebsite = true;

@@ -4,8 +4,8 @@
   angular.module('ngApkreator').controller('HeaderCtrl', function($scope, $rootScope, $compile, $http) {
     var hoodie;
     hoodie = new Hoodie();
-    $scope.account = {};
-    $scope.dropdown = {
+    $rootScope.account = {};
+    $rootScope.dropdown = {
       label: "Sign In"
     };
     $scope.username = hoodie.account.username;
@@ -22,8 +22,8 @@
       }
     ];
     if (hoodie.account.username) {
-      $scope.dropdown.label = $scope.username;
-      $scope.account.dropdownItems = [
+      $rootScope.dropdown.label = $scope.username;
+      $rootScope.account.dropdownItems = [
         {
           name: "My Account",
           "route": ""
@@ -36,7 +36,7 @@
         }
       ];
     } else {
-      $scope.account.dropdownItems = [
+      $rootScope.account.dropdownItems = [
         {
           name: "Sign In",
           onclick: "signIn()"
@@ -52,7 +52,7 @@
       vex.open().append(dialog).bind("vexClose", function() {
         hoodie = new Hoodie();
         if (hoodie.account.username) {
-          $scope.account.dropdownItems = [
+          $rootScope.account.dropdownItems = [
             {
               name: "My Account",
               "route": ""
@@ -64,7 +64,7 @@
               onclick: "signOut()"
             }
           ];
-          $scope.dropdown.label = hoodie.account.username;
+          $rootScope.dropdown.label = hoodie.account.username;
           return $scope.$digest();
         }
       });
@@ -78,7 +78,7 @@
           $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success(function(data) {
             var userInfos;
             if (data.confirmed === true) {
-              $scope.account.dropdownItems = [
+              $rootScope.account.dropdownItems = [
                 {
                   name: "My Account",
                   "route": ""
@@ -94,7 +94,7 @@
               if (userInfos.username) {
                 return userInfos.username;
               } else {
-                return $scope.dropdown.label = hoodie.account.username;
+                return $rootScope.dropdown.label = hoodie.account.username;
               }
             } else {
               return console.log("not confirmed yet!");
@@ -106,10 +106,10 @@
     };
     $scope.signOut = function() {
       hoodie.account.signOut();
-      $scope.dropdown = {
+      $rootScope.dropdown = {
         label: "Sign In"
       };
-      return $scope.account.dropdownItems = [
+      return $rootScope.account.dropdownItems = [
         {
           name: "Sign In",
           onclick: "signIn()"

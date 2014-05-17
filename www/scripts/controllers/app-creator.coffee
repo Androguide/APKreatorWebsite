@@ -8,6 +8,33 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
         { name: "Contact", url: "#", class: "" }
     ]
 
+    hoodie = new Hoodie()
+    $scope.isAuthorized = false
+    if hoodie.account.username
+        $http.get('http://localhost:5000/is_confirmed/' + hoodie.account.username)
+        .success (data) ->
+            console.log "is confirmed: ", data.confirmed
+            if data.confirmed
+                $scope.isAuthorized = true
+            else
+                vex.dialog.alert "Please confirm your account by clicking on the link that was sent to you by email"
+        .error (data, status) ->
+            console.log "error", data, status
+    else
+        dialog = $compile """<div ng-include ng-controller="SignInCtrl" src="'views/parts/dialogs/sign-in.html'"></div>"""
+        vex.open().append(dialog($scope)).bind "vexClose", ->
+            hoodie = new Hoodie()
+            if hoodie.account.username
+                $rootScope.account.dropdownItems = [
+                    {name: "My Account", "route": ""}
+                    {name: "My Apps", "route": ""}
+                    {name: "Sign Out", onclick: "signOut()"}
+                ]
+                $scope.dropdown.label = hoodie.account.username
+                $scope.$digest()
+            else
+                window.location = "/#/"
+
     # Initialize variables
     $scope.hasYoutube = true
     $scope.hasGplus = true
@@ -145,7 +172,6 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
 
 
     $scope.adjustFeaturesText()
-
 
     $scope.compileHtml = (html) ->
         linkThat = $compile html
