@@ -12,7 +12,7 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
         {name: "Contact", url: "#"}
     ]
 
-    if $scope.username # the user is logged in
+    if hoodie.account.username # the user is logged in
         $scope.dropdown.label = $scope.username
         $scope.account.dropdownItems = [
             {name: "My Account", "route": ""}
@@ -47,7 +47,7 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
             hoodie = new Hoodie()
             if hoodie.account.username
                 $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success (data) ->
-                    if data.confirmed
+                    if data.confirmed == true
                         $scope.account.dropdownItems = [
                             {name: "My Account", "route": ""}
                             {name: "My Apps", "route": ""}
@@ -62,7 +62,8 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
                     else
                         console.log "not confirmed yet!"
 
-                    $scope.$digest()
+#                    $scope.$digest()
+                $scope.signOut()
         return
 
     # Sign the user out and update the dropdown

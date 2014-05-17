@@ -113,7 +113,8 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
                     "/api_key/" + encodeURIComponent($scope.config.apiKey)
 
             console.log request
-            _dialog =
+
+            vex.dialog.open().html
             """
             <div class="sign-in-dialog">
                  <div class="text-center">
@@ -122,15 +123,24 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
                  <div class="csspinner bar-follow" style="width: 450px; margin-top: 30px; margin-bottom: 80px;"></div>
             </div>
             """
-            vex.dialog.open().html _dialog
 
             $http({method: 'GET', url: 'http://localhost:5000' + request})
             .success((data, status, headers, config) ->
                 console.log data, status, headers, config
                 vex.closeAll()
                 window.location = data.apkUrl
+
             ).error((data, status, headers, config) ->
                 console.log "error", data, status, headers, config
+                vex.dialog.open().html
+                """
+                <div class="sign-in-dialog">
+                     <div class="text-center">
+                         <h1 class="pumpkin no-margin-top">There Was an Error!</h1>
+                     </div>
+                     <p class="aleo">Sorry, an error seems to have occured while building your app. Please try again.</p>
+                </div>
+                """
             )
 
 

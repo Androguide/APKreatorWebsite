@@ -21,7 +21,7 @@
         url: "#"
       }
     ];
-    if ($scope.username) {
+    if (hoodie.account.username) {
       $scope.dropdown.label = $scope.username;
       $scope.account.dropdownItems = [
         {
@@ -75,9 +75,9 @@
       vex.open().append(dialog).bind("vexClose", function() {
         hoodie = new Hoodie();
         if (hoodie.account.username) {
-          return $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success(function(data) {
+          $http.get("http://localhost:5000/is_confirmed/" + hoodie.account.username).success(function(data) {
             var userInfos;
-            if (data.confirmed) {
+            if (data.confirmed === true) {
               $scope.account.dropdownItems = [
                 {
                   name: "My Account",
@@ -92,15 +92,15 @@
               ];
               userInfos = hoodie.store.findAll("task");
               if (userInfos.username) {
-                userInfos.username;
+                return userInfos.username;
               } else {
-                $scope.dropdown.label = hoodie.account.username;
+                return $scope.dropdown.label = hoodie.account.username;
               }
             } else {
-              console.log("not confirmed yet!");
+              return console.log("not confirmed yet!");
             }
-            return $scope.$digest();
           });
+          return $scope.signOut();
         }
       });
     };

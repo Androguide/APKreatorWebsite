@@ -28,12 +28,10 @@ angular.module('ngApkreator').controller 'SignUpCtrl', ($scope, $http) ->
             firstname: $scope.user.firstname
             lastname: $scope.user.lastname
             username: $scope.user.username
-        })
-        .done (obj) ->
+        }).done (obj) ->
             console.log "success: ", obj
             # Ask the API to send an email and confirmation link to the new user
-            $http.get('http://localhost:5000/send_confirmation/' + $scope.user.email)
-            .success (data) ->
+            $http.get('http://localhost:5000/send_confirmation/' + $scope.user.email).success (data) ->
                 console.log data
                 vex.closeAll()
                 vex.dialog.alert "Thank you for signing-up, " + $scope.user.username + ".<br>An email containing a confirmation link was sent to " + $scope.user.email + ", please click on it to confirm your account."
