@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/res" >
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/res/values/colors.xml"
+                qualifiers="" >
+                <color name="background_tab_pressed" >#6633B5E5
+                </color>
+            </file>
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/res/values/attrs.xml"
+                qualifiers="" >
+                <declare-styleable name="PagerSlidingTabStrip" >
+                    <attr
+                        name="indicatorColor"
+                        format="color" />
+                    <attr
+                        name="underlineColor"
+                        format="color" />
+                    <attr
+                        name="dividerColor"
+                        format="color" />
+                    <attr
+                        name="indicatorHeight"
+                        format="dimension" />
+                    <attr
+                        name="underlineHeight"
+                        format="dimension" />
+                    <attr
+                        name="dividerPadding2"
+                        format="dimension" />
+                    <attr
+                        name="tabPaddingLeftRight"
+                        format="dimension" />
+                    <attr
+                        name="scrollOffset"
+                        format="dimension" />
+                    <attr
+                        name="tabBackground"
+                        format="reference" />
+                    <attr
+                        name="shouldExpand"
+                        format="boolean" />
+                    <attr
+                        name="textAllCaps2"
+                        format="boolean" />
+                </declare-styleable>
+            </file>
+            <file
+                name="background_tab"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/res/drawable/background_tab.xml"
+                qualifiers=""
+                type="drawable" />
+        </source>
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/build/res/rs/release" />
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/build/res/generated/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/build-types/release/res" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/CardsUILib/build/exploded-aar/CONTAINER.libs/SwitchCompatLibrary/unspecified/res/values-v11/values.xml -->
+    <eat-comment />
+
+    <style name="SeekBarplayBlue" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerplayBlue" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_holo_light</item>
+    </style>
+    <!-- From: file:/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/CardsUILib/build/exploded-aar/com.android.support/appcompat-v7/19.0.1/res/values-v11/values.xml -->
+    <eat-comment />
+
+    <style name="Theme.Base" parent="android:Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Theme.Base.Light" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- Attributes populated from the framework to be read by apps -->
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="android:Widget.Holo.AutoCompleteTextView" />
+
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="android:Widget.Holo.ProgressBar" />
+
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="android:Widget.Holo.ProgressBar.Horizontal" />
+
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="android:Widget.Holo.Light.AutoCompleteTextView" />
+    <!-- From: file:/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/CardsUILib/build/exploded-aar/CONTAINER.libs/SwitchCompatLibrary/unspecified/res/values-v11/values.xml -->
+    <eat-comment />
+
+    <style name="playBlue" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerplayBlue</item>
+        <item name="android:seekBarStyle">@style/SeekBarplayBlue</item>
+    </style>
+
+</resources>

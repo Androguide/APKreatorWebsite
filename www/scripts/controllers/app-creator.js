@@ -57,11 +57,13 @@
     }
     $scope.hasYoutube = true;
     $scope.hasGplus = true;
+    $scope.hasTwitter = true;
     $scope.hasWebsite = true;
     $scope.features_text = "";
     $scope.features = {
       youtube: localStorage.getItem("youtube"),
-      gplus: localStorage.getItem("gplus")
+      gplus: localStorage.getItem("gplus"),
+      twitter: localStorage.getItem("twitter")
     };
     $scope.config = {
       appName: localStorage.getItem("appName"),
@@ -82,81 +84,26 @@
       }
     };
     $scope.generateAPIRequest = function() {
-      var isFormValid, request;
-      isFormValid = true;
-      if ($scope.config.appName === "") {
-        $('#appName').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('#appName').removeClass("ng-invalid");
-      }
-      if ($scope.config.packageName === "") {
-        $('#packageName').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('#packageName').removeClass("ng-invalid");
-      }
-      if ($scope.config.colorScheme === "") {
-        $('#colorScheme').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('#colorScheme').removeClass("ng-invalid");
-      }
-      if ($scope.config.presentation === "") {
-        $('textarea[name=presentation]').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('textarea[name=presentation]').removeClass("ng-invalid");
-      }
-      if ($scope.config.icon === "") {
-        $('input[name=icon]').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('input[name=icon]').removeClass("ng-invalid");
-      }
-      if ($scope.config.website === "") {
-        $('input[name=website]').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('input[name=website]').removeClass("ng-invalid");
-      }
-      if ($scope.config.apiKey === "") {
-        $('#apiKey').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('#apiKey').removeClass("ng-invalid");
-      }
-      if ($scope.hasYoutube && $scope.features.youtube === "") {
-        $('#youtube').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('#youtube').removeClass("ng-invalid");
-      }
-      if ($scope.hasGplus && $scope.features.gplus === "") {
-        $('#gplus').addClass("ng-invalid");
-        isFormValid = false;
-      } else {
-        $('#gplus').removeClass("ng-invalid");
-      }
+      var request;
       saveToLocalStorage();
-      if (isFormValid) {
-        request = "/app/" + encodeURIComponent($scope.config.appName) + "/package/" + encodeURIComponent($scope.config.packageName) + "/color/" + encodeURIComponent($scope.config.colorScheme) + "/icon/" + encodeURIComponent($scope.config.icon) + "/youtube/" + encodeURIComponent($scope.features.youtube) + "/gplus/" + encodeURIComponent($scope.features.gplus) + "/twitter/unimplemented/facebook/unimplemented" + "/website/" + encodeURIComponent($scope.config.website) + "/welcome_title/Welcome!" + "/welcome_desc/" + encodeURIComponent($scope.config.presentation) + "/api_key/" + encodeURIComponent($scope.config.apiKey);
-        console.log(request);
-        vex.dialog.open().html;
-        "<div class=\"sign-in-dialog\">\n     <div class=\"text-center\">\n         <h1 class=\"teal no-margin-top\">Building Your App</h1>\n     </div>\n     <div class=\"csspinner bar-follow\" style=\"width: 450px; margin-top: 30px; margin-bottom: 80px;\"></div>\n</div>";
-        return $http({
-          method: 'GET',
-          url: 'http://localhost:5000' + request
-        }).success(function(data, status, headers, config) {
-          console.log(data, status, headers, config);
-          vex.closeAll();
-          return window.location = data.apkUrl;
-        }).error(function(data, status, headers, config) {
-          console.log("error", data, status, headers, config);
-          vex.dialog.open().html;
-          return "<div class=\"sign-in-dialog\">\n     <div class=\"text-center\">\n         <h1 class=\"pumpkin no-margin-top\">There Was an Error!</h1>\n     </div>\n     <p class=\"aleo\">Sorry, an error seems to have occured while building your app. Please try again.</p>\n</div>";
-        });
-      }
+      request = "/app/" + encodeURIComponent($scope.config.appName) + "/package/" + encodeURIComponent($scope.config.packageName) + "/color/" + encodeURIComponent($scope.config.colorScheme) + "/icon/" + encodeURIComponent($scope.config.icon) + "/youtube/" + encodeURIComponent($scope.features.youtube) + "/gplus/" + encodeURIComponent($scope.features.gplus) + "/twitter/" + encodeURIComponent($scope.features.twitter) + "/facebook/unimplemented" + "/website/" + encodeURIComponent($scope.config.website) + "/welcome_title/Welcome!" + "/welcome_desc/" + encodeURIComponent($scope.config.presentation) + "/api_key/" + encodeURIComponent($scope.config.apiKey);
+      console.log(request);
+      vex.dialog.open({
+        showCloseButton: false,
+        escapeButtonCloses: false,
+        overlayClosesOnClick: false
+      }).html("<div class=\"sign-in-dialog\">\n     <div class=\"text-center\">\n         <h1 class=\"teal no-margin-top\">Building Your App</h1>\n     </div>\n     <div class=\"csspinner bar-follow\" style=\"width: 450px; margin-top: 30px; margin-bottom: 80px;\"></div>\n</div>");
+      return $http({
+        method: 'GET',
+        url: 'http://localhost:5000' + request
+      }).success(function(data, status, headers, config) {
+        console.log(data, status, headers, config);
+        vex.closeAll();
+        return window.location = data.apkUrl;
+      }).error(function(data, status, headers, config) {
+        console.log("error", data, status, headers, config);
+        return vex.dialog.open().html("<div class=\"sign-in-dialog\">\n     <div class=\"text-center\">\n         <h1 class=\"pumpkin no-margin-top\">There Was an Error!</h1>\n     </div>\n     <p class=\"aleo\">Sorry, an error seems to have occured while building your app. Please try again.</p>\n</div>");
+      });
     };
     $scope.adjustFeaturesText();
     $scope.compileHtml = function(html) {

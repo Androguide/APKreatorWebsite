@@ -38,6 +38,7 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
     # Initialize variables
     $scope.hasYoutube = true
     $scope.hasGplus = true
+    $scope.hasTwitter = true
     $scope.hasWebsite = true
     $scope.features_text = ""
 
@@ -45,6 +46,7 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
     $scope.features =
         youtube: localStorage.getItem "youtube"
         gplus: localStorage.getItem "gplus"
+        twitter: localStorage.getItem "twitter"
 
     # Initialize config variables
     $scope.config =
@@ -67,108 +69,54 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
 
     # Validate the form and send the API request
     $scope.generateAPIRequest = ->
-        isFormValid = true
-
-        if $scope.config.appName == ""
-            $('#appName').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('#appName').removeClass "ng-invalid"
-
-        if $scope.config.packageName == ""
-            $('#packageName').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('#packageName').removeClass "ng-invalid"
-
-        if $scope.config.colorScheme == ""
-            $('#colorScheme').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('#colorScheme').removeClass "ng-invalid"
-
-        if $scope.config.presentation == ""
-            $('textarea[name=presentation]').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('textarea[name=presentation]').removeClass "ng-invalid"
-
-        if $scope.config.icon == ""
-            $('input[name=icon]').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('input[name=icon]').removeClass "ng-invalid"
-
-        if $scope.config.website == ""
-            $('input[name=website]').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('input[name=website]').removeClass "ng-invalid"
-
-        if $scope.config.apiKey == ""
-            $('#apiKey').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('#apiKey').removeClass "ng-invalid"
-
-        if $scope.hasYoutube and $scope.features.youtube == ""
-            $('#youtube').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('#youtube').removeClass "ng-invalid"
-
-        if $scope.hasGplus and $scope.features.gplus == ""
-            $('#gplus').addClass "ng-invalid"
-            isFormValid = false
-        else
-            $('#gplus').removeClass "ng-invalid"
-
         saveToLocalStorage()
 
-        if isFormValid
-            request =
-                    "/app/" + encodeURIComponent($scope.config.appName) +
-                    "/package/" + encodeURIComponent($scope.config.packageName) +
-                    "/color/" + encodeURIComponent($scope.config.colorScheme) +
-                    "/icon/" + encodeURIComponent($scope.config.icon) +
-                    "/youtube/" + encodeURIComponent($scope.features.youtube) +
-                    "/gplus/" + encodeURIComponent($scope.features.gplus) +
-                    "/twitter/unimplemented/facebook/unimplemented" + # Unimplemented features
-                    "/website/" + encodeURIComponent($scope.config.website) +
-                    "/welcome_title/Welcome!" + # TODO: add a card to let the user set the welcome card's title
-                    "/welcome_desc/" + encodeURIComponent($scope.config.presentation) +
-                    "/api_key/" + encodeURIComponent($scope.config.apiKey)
+        request =
+                "/app/" + encodeURIComponent($scope.config.appName) +
+                "/package/" + encodeURIComponent($scope.config.packageName) +
+                "/color/" + encodeURIComponent($scope.config.colorScheme) +
+                "/icon/" + encodeURIComponent($scope.config.icon) +
+                "/youtube/" + encodeURIComponent($scope.features.youtube) +
+                "/gplus/" + encodeURIComponent($scope.features.gplus) +
+                "/twitter/" + encodeURIComponent($scope.features.twitter) +
+                "/facebook/unimplemented" + # Unimplemented features
+                "/website/" + encodeURIComponent($scope.config.website) +
+                "/welcome_title/Welcome!" + # TODO: add a card to let the user set the welcome card's title
+                "/welcome_desc/" + encodeURIComponent($scope.config.presentation) +
+                "/api_key/" + encodeURIComponent($scope.config.apiKey)
 
-            console.log request
+        console.log request
 
-            vex.dialog.open().html
-            """
+        vex.dialog.open({
+            showCloseButton: false
+            escapeButtonCloses: false
+            overlayClosesOnClick: false
+        }).html """
+        <div class="sign-in-dialog">
+             <div class="text-center">
+                 <h1 class="teal no-margin-top">Building Your App</h1>
+             </div>
+             <div class="csspinner bar-follow" style="width: 450px; margin-top: 30px; margin-bottom: 80px;"></div>
+        </div>
+        """
+
+        $http({method: 'GET', url: 'http://localhost:5000' + request})
+        .success((data, status, headers, config) ->
+            console.log data, status, headers, config
+            vex.closeAll()
+            window.location = data.apkUrl
+
+        ).error((data, status, headers, config) ->
+            console.log "error", data, status, headers, config
+            vex.dialog.open().html """
             <div class="sign-in-dialog">
                  <div class="text-center">
-                     <h1 class="teal no-margin-top">Building Your App</h1>
+                     <h1 class="pumpkin no-margin-top">There Was an Error!</h1>
                  </div>
-                 <div class="csspinner bar-follow" style="width: 450px; margin-top: 30px; margin-bottom: 80px;"></div>
+                 <p class="aleo">Sorry, an error seems to have occured while building your app. Please try again.</p>
             </div>
             """
-
-            $http({method: 'GET', url: 'http://localhost:5000' + request})
-            .success((data, status, headers, config) ->
-                console.log data, status, headers, config
-                vex.closeAll()
-                window.location = data.apkUrl
-
-            ).error((data, status, headers, config) ->
-                console.log "error", data, status, headers, config
-                vex.dialog.open().html
-                """
-                <div class="sign-in-dialog">
-                     <div class="text-center">
-                         <h1 class="pumpkin no-margin-top">There Was an Error!</h1>
-                     </div>
-                     <p class="aleo">Sorry, an error seems to have occured while building your app. Please try again.</p>
-                </div>
-                """
-            )
+        )
 
 
     $scope.adjustFeaturesText()

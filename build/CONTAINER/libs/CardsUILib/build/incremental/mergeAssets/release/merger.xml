@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/CardsUILib/assets" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/CardsUILib/build-types/release/assets" />
+    </dataSet>
+
+</merger>

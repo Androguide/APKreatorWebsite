@@ -31,7 +31,8 @@
 
                         <p>This feature allows users to browse through your YouTube channel &amp; watch your videos
                             directly from your app, with no login required.</p>
-                        <input id="youtube" ng-model="features.youtube" type="text" placeholder="YouTube channel name&#8230;"
+                        <input id="youtube" ng-model="features.youtube" type="text"
+                               placeholder="YouTube channel name&#8230;"
                                ng-disabled="!hasYoutube"/>
                     </div>
                 </div>
@@ -65,7 +66,7 @@
             </div>
 
             <!-- TWITTER -->
-            <div class="col-sm-4 feat-disabled">
+            <div class="col-sm-4">
                 <div class="ng-card">
                     <div class="row-fluid clearfix">
                         <div class="col-xs-8">
@@ -73,7 +74,8 @@
                         </div>
                         <div class="col-xs-4">
                             <div class="flat-switch pull-right">
-                                <input type="checkbox" value="1" id="has_twitter" checked disabled/>
+                                <input type="checkbox" value="1" id="has_twitter" ng-model="has_twitter"
+                                       ng-change="hasTwitter = !hasTwitter"/>
                                 <label for="has_twitter"></label>
 
                                 <div></div>
@@ -83,7 +85,7 @@
 
                     <p>This feature allows users to browse through all your tweets and read them directly from your
                         application. (This feature is not available yet).</p>
-                    <input ng-model="features.twitter" type="text" placeholder="Twitter username&#8230;" disabled=""/>
+                    <input id="twitter" ng-model="features.twitter" type="text" placeholder="Twitter username&#8230;"/>
                 </div>
             </div>
         </div>
@@ -116,7 +118,8 @@
 
                         <p>The unique identifier of your app. Use a reverse-url scheme with at least 3 parts:
                             <i>country.company.appname</i></p>
-                        <input id="packageName" ng-model="config.packageName" type="text" placeholder="com.apkreator.demoapp&#8230;"/>
+                        <input id="packageName" ng-model="config.packageName" type="text"
+                               placeholder="com.apkreator.demoapp&#8230;"/>
                     </div>
                 </div>
             </div>
@@ -154,7 +157,8 @@
 
                         <p>The icon of your app, which will be visible in the user's app drawer and in the action-bar of
                             your application</p>
-                        <input name="icon" type="text" placeholder="http://i.imgur.com/zg9z8r7.png" ng-model="config.icon"/>
+                        <input name="icon" type="text" placeholder="http://i.imgur.com/zg9z8r7.png"
+                               ng-model="config.icon"/>
                         <button class="btn btn-belize">Load</button>
                     </div>
                     <div class="image-holder">
@@ -184,7 +188,8 @@
 
                         <p>If you have a website, please input its url below.<br/>A link to your website will be added
                             in the sliding drawer of your application.</p>
-                        <input class="website" name="website" type="text" ng-model="config.website" placeholder="http://apkreator.com&#8230;"
+                        <input class="website" name="website" type="text" ng-model="config.website"
+                               placeholder="http://apkreator.com&#8230;"
                                ng-disabled="!hasWebsite"/>
                     </div>
                 </div>
@@ -210,7 +215,8 @@
 
                         <p>The icon of your app, which will be visible in the user's app drawer and in the action-bar of
                             your application</p>
-                        <input name="icon" type="text" placeholder="http://i.imgur.com/zg9z8r7.png&#8230;" ng-model="config.icon"/>
+                        <input name="icon" type="text" placeholder="http://i.imgur.com/zg9z8r7.png&#8230;"
+                               ng-model="config.icon"/>
                         <button class="btn btn-belize">Load</button>
                     </div>
                     <div class="image-holder">
@@ -240,7 +246,8 @@
 
                         <p>If you have a website, please input its url below.<br/>A link to your website will be added
                             in the sliding drawer of your application.</p>
-                        <input class="website" name="website" type="text" ng-model="config.website" placeholder="http://apkreator.com&#8230;"
+                        <input class="website" name="website" type="text" ng-model="config.website"
+                               placeholder="http://apkreator.com&#8230;"
                                ng-disabled="!hasWebsite"/>
                     </div>
                 </div>

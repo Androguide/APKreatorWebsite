@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values-v11/styles_playblue.xml -->
+    <eat-comment />
+
+    <style name="SeekBarplayBlue" parent="android:Widget.Holo.Light.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo_light</item>
+    </style>
+
+    <style name="SpinnerplayBlue" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_holo_light</item>
+    </style>
+    <!-- From: file:/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values-v11/themes_playblue.xml -->
+    <eat-comment />
+
+    <style name="playBlue" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerplayBlue</item>
+        <item name="android:seekBarStyle">@style/SeekBarplayBlue</item>
+    </style>
+
+</resources>

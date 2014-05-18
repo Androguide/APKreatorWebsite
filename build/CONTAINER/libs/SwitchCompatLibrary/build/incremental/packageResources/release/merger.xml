@@ -1,0 +1,1638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res" >
+            <file
+                name="progress_bg_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progress_bg_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_pressed_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_on_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_on_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progress_primary_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progress_primary_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="textfield_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/textfield_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_bg_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="textfield_default_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/textfield_default_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo4"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo4.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/spinner_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_rating_star_off_normal_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="scrubber_track_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/scrubber_track_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_rating_star_on_normal_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_bg_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_bg_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_default_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_default_normal_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_disabled_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_off_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_on_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/spinner_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_default_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/spinner_default_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_off_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo6"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo6.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_on_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_default_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_default_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_on_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="scrubber_secondary_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/scrubber_secondary_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_on_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_bg_focused_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_default_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_default_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_off_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_activated_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_default_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_default_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="scrubber_primary_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/scrubber_primary_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/spinner_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_bg_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_normal_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/scrubber_control_normal_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_on_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_rating_star_on_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo7"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo7.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_on_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="list_focused_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/list_focused_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="list_activated_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/list_activated_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="list_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/list_pressed_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_rating_star_off_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="textfield_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/textfield_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_rating_star_off_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_pressed_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/scrubber_control_pressed_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo5"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo5.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="textfield_activated_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/textfield_activated_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_off_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_default_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_default_disabled_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_off_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_disabled_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/scrubber_control_disabled_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_off_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_on_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_rating_star_on_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_on_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_off_pressed_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="textfield_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/textfield_disabled_focused_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="list_longpressed_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/list_longpressed_holo.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_off_disabled_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progress_secondary_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progress_secondary_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_bg_disabled_holo_dark.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="list_selector_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/list_selector_disabled_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo1"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo1.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo3"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo3.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_radio_off_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/btn_check_off_disabled_focused_holo_light.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/switch_thumb_activated_holo_light.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo2"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo2.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo8"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/progressbar_indeterminate_holo8.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_focused_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-hdpi/scrubber_control_focused_holo.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progress_bg_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progress_bg_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_pressed_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_on_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_on_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progress_primary_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progress_primary_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="textfield_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/textfield_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_bg_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="textfield_default_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/textfield_default_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo4"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo4.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/spinner_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_rating_star_off_normal_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="scrubber_track_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/scrubber_track_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_rating_star_on_normal_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_bg_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_bg_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_default_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_default_normal_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_disabled_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_off_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_on_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/spinner_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_default_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/spinner_default_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_off_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo6"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo6.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_on_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_default_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_default_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_on_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="scrubber_secondary_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/scrubber_secondary_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_on_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_bg_focused_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_default_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_default_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_off_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_activated_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_default_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_default_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="scrubber_primary_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/scrubber_primary_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="spinner_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/spinner_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_bg_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_normal_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/scrubber_control_normal_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_on_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_rating_star_on_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo7"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo7.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_on_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="list_focused_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/list_focused_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="list_activated_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/list_activated_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="list_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/list_pressed_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_rating_star_off_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="textfield_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/textfield_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_rating_star_off_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_pressed_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/scrubber_control_pressed_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo5"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo5.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="textfield_activated_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/textfield_activated_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_off_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_default_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_default_disabled_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_off_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_disabled_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/scrubber_control_disabled_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_off_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_on_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_rating_star_on_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_on_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_off_pressed_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="textfield_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/textfield_disabled_focused_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="list_longpressed_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/list_longpressed_holo.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_off_disabled_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progress_secondary_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progress_secondary_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_bg_disabled_holo_dark.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="list_selector_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/list_selector_disabled_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo1"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo1.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo3"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo3.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_radio_off_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/btn_check_off_disabled_focused_holo_light.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/switch_thumb_activated_holo_light.9.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo2"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo2.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo8"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/progressbar_indeterminate_holo8.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_focused_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-mdpi/scrubber_control_focused_holo.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values/styles_playblue.xml"
+                qualifiers="" >
+
+                <style name="SpinnerplayBlue.DropDown" >
+                    <item name="android:spinnerMode">
+dropdown
+                    </item>
+                </style>
+
+                <style
+                    name="SpinnerDropDownItemplayBlue"
+                    parent="android:Widget.DropDownItem.Spinner" >
+                    <item name="android:checkMark">
+@drawable/btn_radio_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="SeekBarplayBlue"
+                    parent="android:Widget.SeekBar" >
+                    <item name="android:progressDrawable">
+@drawable/scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+@drawable/scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:minHeight">
+13dip
+                    </item>
+                    <item name="android:maxHeight">
+13dip
+                    </item>
+                    <item name="android:thumb">
+@drawable/scrubber_control_selector_holo_light
+                    </item>
+                    <item name="android:thumbOffset">
+16dip
+                    </item>
+                    <item name="android:paddingLeft">
+16dip
+                    </item>
+                    <item name="android:paddingRight">
+16dip
+                    </item>
+                </style>
+
+                <style
+                    name="SpinnerplayBlue"
+                    parent="android:Widget.Spinner" >
+                    <item name="android:background">
+@drawable/spinner_background_holo_light
+                    </item>
+                    <item name="android:dropDownSelector">
+@drawable/list_selector_holo_light
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values/strings.xml"
+                qualifiers="" >
+                <string name="textOff" >OFF
+                </string>
+                <string name="textOn" >ON
+                </string>
+            </file>
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values/themes_playblue.xml"
+                qualifiers="" >
+
+                <style
+                    name="playBlue"
+                    parent="android:Theme.Light" >
+                    <item name="android:spinnerStyle">
+@style/SpinnerplayBlue
+                    </item>
+                    <item name="android:dropDownSpinnerStyle">
+@style/SpinnerplayBlue.DropDown
+                    </item>
+                    <item name="android:spinnerDropDownItemStyle">
+@style/SpinnerDropDownItemplayBlue
+                    </item>
+                    <item name="android:seekBarStyle">
+@style/SeekBarplayBlue
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values/attrs.xml"
+                qualifiers="" >
+                <attr
+                    name="textAppearance"
+                    format="reference" />
+                <attr
+                    name="switchStyle"
+                    format="reference" />
+
+                <declare-styleable name="TextAppearanceSwitch" >
+                    <attr
+                        name="textColor"
+                        format="color" />
+                    <attr
+                        name="textSize"
+                        format="dimension" />
+                    <attr
+                        name="textStyle"
+                        format="reference" />
+                    <attr
+                        name="typeface"
+                        format="reference" />
+                    <attr
+                        name="fontFamily"
+                        format="reference" />
+                    <attr
+                        name="textColorHighlight"
+                        format="color" />
+                    <attr
+                        name="textColorHint"
+                        format="color" />
+                    <attr
+                        name="textColorLink"
+                        format="color" />
+                    <attr
+                        name="textAllInCaps"
+                        format="boolean" />
+                </declare-styleable>
+                <declare-styleable name="Switch" >
+                    <attr
+                        name="thumb"
+                        format="reference" />
+                    <attr
+                        name="track"
+                        format="reference" />
+                    <attr
+                        name="textOn"
+                        format="string" />
+                    <attr
+                        name="textOff"
+                        format="string" />
+                    <attr
+                        name="thumbTextPadding"
+                        format="dimension" />
+                    <attr
+                        name="switchTextAppearance"
+                        format="reference" />
+                    <attr
+                        name="switchMinWidth"
+                        format="dimension" />
+                    <attr
+                        name="switchPadding"
+                        format="dimension" />
+                </declare-styleable>
+            </file>
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values/themes.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppThemeLight"
+                    parent="@android:style/Theme.DeviceDefault.Light" >
+                    <item name="switchStyle">
+@style/switch_light
+                    </item>
+                    <item name="textAppearance">
+@style/TextAppearance
+                    </item>
+                </style>
+
+                <style
+                    name="AppThemeDark"
+                    parent="@android:style/Theme.DeviceDefault" >
+                    <item name="switchStyle">
+@style/switch_dark
+                    </item>
+                    <item name="textAppearance">
+@style/TextAppearance
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values/styles.xml"
+                qualifiers="" >
+
+                <style name="TextAppearance" >
+                    <item name="textColor">
+?android:attr/textColorPrimary
+                    </item>
+                    <item name="textColorHighlight">
+?android:attr/textColorHighlight
+                    </item>
+                    <item name="textColorHint">
+?android:attr/textColorHint
+                    </item>
+                    <item name="textColorLink">
+?android:attr/textColorLink
+                    </item>
+                    <item name="textSize">
+16sp
+                    </item>
+                </style>
+
+                <style name="switch_light" >
+                    <item name="track">
+@drawable/switch_track_holo_light
+                    </item>
+                    <item name="thumb">
+@drawable/switch_inner_holo_light
+                    </item>
+                    <item name="textOn">
+@string/textOn
+                    </item>
+                    <item name="textOff">
+@string/textOff
+                    </item>
+                    <item name="thumbTextPadding">
+12dip
+                    </item>
+                    <item name="switchMinWidth">
+96dip
+                    </item>
+                    <item name="switchPadding">
+16dip
+                    </item>
+                    <item name="switchTextAppearance">
+@style/TextAppearance
+                    </item>
+                </style>
+
+                <style name="switch_dark" >
+                    <item name="track">
+@drawable/switch_track_holo_dark
+                    </item>
+                    <item name="thumb">
+@drawable/switch_inner_holo_dark
+                    </item>
+                    <item name="textOn">
+@string/textOn
+                    </item>
+                    <item name="textOff">
+@string/textOff
+                    </item>
+                    <item name="thumbTextPadding">
+12dip
+                    </item>
+                    <item name="switchMinWidth">
+96dip
+                    </item>
+                    <item name="switchPadding">
+16dip
+                    </item>
+                    <item name="switchTextAppearance">
+@style/TextAppearance
+                    </item>
+                </style>
+            </file>
+            <file
+                name="progress_bg_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progress_bg_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_pressed_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_on_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_on_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progress_primary_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progress_primary_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="textfield_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/textfield_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_bg_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="textfield_default_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/textfield_default_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo4"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo4.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/spinner_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_rating_star_off_normal_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="scrubber_track_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/scrubber_track_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_rating_star_on_normal_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_bg_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_bg_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_default_normal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_default_normal_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_disabled_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_off_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_on_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/spinner_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_default_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/spinner_default_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_off_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo6"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo6.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_on_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_default_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_default_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_on_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="scrubber_secondary_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/scrubber_secondary_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_on_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_bg_focused_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_default_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_default_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_off_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_activated_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_default_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_default_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="scrubber_primary_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/scrubber_primary_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="spinner_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/spinner_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_bg_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_normal_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/scrubber_control_normal_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_on_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_rating_star_on_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo7"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo7.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_on_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_on_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="list_focused_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/list_focused_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="list_activated_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/list_activated_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="list_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/list_pressed_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_rating_star_off_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="textfield_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/textfield_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_rating_star_off_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_pressed_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/scrubber_control_pressed_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo5"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo5.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="textfield_activated_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/textfield_activated_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_off_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_default_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_default_disabled_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_off_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_disabled_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/scrubber_control_disabled_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_off_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_on_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_rating_star_on_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_rating_star_on_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_on_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_on_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_off_pressed_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="textfield_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/textfield_disabled_focused_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="list_longpressed_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/list_longpressed_holo.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_off_disabled_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progress_secondary_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progress_secondary_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_bg_disabled_holo_dark.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="list_selector_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/list_selector_disabled_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo1"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo1.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo3"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo3.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_radio_off_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_radio_off_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="btn_check_off_disabled_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/btn_check_off_disabled_focused_holo_light.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/switch_thumb_activated_holo_light.9.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo2"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo2.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="progressbar_indeterminate_holo8"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/progressbar_indeterminate_holo8.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="scrubber_control_focused_holo"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-xhdpi/scrubber_control_focused_holo.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_pressed_holo_dark.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_holo_light.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_bg_holo_dark.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_holo_dark.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_bg_focused_holo_light.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_disabled_holo_light.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_bg_disabled_holo_light.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_disabled_holo_dark.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_pressed_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_pressed_holo_light.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_bg_focused_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_bg_focused_holo_dark.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_activated_holo_dark.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_bg_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_bg_holo_light.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_bg_disabled_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_bg_disabled_holo_dark.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="switch_thumb_activated_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable-ldpi/switch_thumb_activated_holo_light.9.png"
+                qualifiers="ldpi"
+                type="drawable" />
+            <file
+                name="list_selector_background_transition_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/list_selector_background_transition_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ratingbar_full_filled_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/ratingbar_full_filled_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="switch_inner_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/switch_inner_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ratingbar_full_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/ratingbar_full_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="spinner_background_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/spinner_background_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="list_selector_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/list_selector_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_check_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/btn_check_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="switch_inner_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/switch_inner_holo_dark.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_radio_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/btn_radio_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="scrubber_control_selector_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/scrubber_control_selector_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="activated_background_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/activated_background_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="edit_text_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/edit_text_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="scrubber_progress_horizontal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/scrubber_progress_horizontal_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_default_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/btn_default_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="progress_horizontal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/progress_horizontal_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="progress_indeterminate_horizontal_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/progress_indeterminate_horizontal_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="switch_track_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/switch_track_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="item_background_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/item_background_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="switch_track_holo_dark"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/switch_track_holo_dark.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ratingbar_full_empty_holo_light"
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/drawable/ratingbar_full_empty_holo_light.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values-v11/styles_playblue.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="SpinnerplayBlue"
+                    parent="android:Widget.Holo.Light.Spinner" >
+                    <item name="android:background">
+@drawable/spinner_background_holo_light
+                    </item>
+                    <item name="android:dropDownSelector">
+@drawable/list_selector_holo_light
+                    </item>
+                </style>
+
+                <style
+                    name="SeekBarplayBlue"
+                    parent="android:Widget.Holo.Light.SeekBar" >
+                    <item name="android:progressDrawable">
+@drawable/scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:indeterminateDrawable">
+@drawable/scrubber_progress_horizontal_holo_light
+                    </item>
+                    <item name="android:thumb">
+@drawable/scrubber_control_selector_holo_light
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/res/values-v11/themes_playblue.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="playBlue"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+                    <item name="android:dropDownSpinnerStyle">
+@style/SpinnerplayBlue
+                    </item>
+                    <item name="android:seekBarStyle">
+@style/SeekBarplayBlue
+                    </item>
+                </style>
+            </file>
+        </source>
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/build/res/rs/release" />
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/build/res/generated/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/SwitchCompatLibrary/build-types/release/res" />
+    </dataSet>
+
+</merger>
