@@ -93,9 +93,8 @@
         escapeButtonCloses: false,
         overlayClosesOnClick: false
       }).html("<div class=\"sign-in-dialog\">\n     <div class=\"text-center\">\n         <h1 class=\"teal no-margin-top\">Building Your App</h1>\n     </div>\n     <div class=\"csspinner bar-follow\" style=\"width: 450px; margin-top: 30px; margin-bottom: 80px;\"></div>\n</div>");
-      return $http({
-        method: 'GET',
-        url: 'http://localhost:5000' + request
+      return $http.get('http://ec2-54-187-101-214.us-west-2.compute.amazonaws.com:5000' + request, {
+        timeout: 500
       }).success(function(data, status, headers, config) {
         console.log(data, status, headers, config);
         vex.closeAll();
@@ -120,6 +119,7 @@
       localStorage.setItem("apiKey", $scope.config.apiKey);
       localStorage.setItem("hasYoutube", $scope.hasYoutube);
       localStorage.setItem("youtube", $scope.features.youtube);
+      localStorage.setItem("twitter", $scope.features.twitter);
       localStorage.setItem("hasGplus", $scope.hasGplus);
       localStorage.setItem("gplus", $scope.features.gplus);
       return localStorage.setItem("website", $scope.config.website);

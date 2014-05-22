@@ -100,7 +100,7 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
         </div>
         """
 
-        $http({method: 'GET', url: 'http://localhost:5000' + request})
+        $http.get('http://ec2-54-187-101-214.us-west-2.compute.amazonaws.com:5000' + request, {timeout: 500})
         .success((data, status, headers, config) ->
             console.log data, status, headers, config
             vex.closeAll()
@@ -135,6 +135,7 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
         localStorage.setItem "apiKey", $scope.config.apiKey
         localStorage.setItem "hasYoutube", $scope.hasYoutube
         localStorage.setItem "youtube", $scope.features.youtube
+        localStorage.setItem "twitter", $scope.features.twitter
         localStorage.setItem "hasGplus", $scope.hasGplus
         localStorage.setItem "gplus", $scope.features.gplus
         localStorage.setItem "website", $scope.config.website
