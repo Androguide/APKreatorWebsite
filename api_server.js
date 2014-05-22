@@ -203,7 +203,7 @@ under the License.
 
 
   app.get("/send_confirmation/:email", function(req, res) {
-    var mailOptions, responseHolder, rn, sent;
+    var mailOptions, responseHolder, rn;
     res.set("Access-Control-Allow-Origin", "*");
     rn = getCompliantRandomness();
     storage.setItem(req.params.email, {
@@ -220,21 +220,22 @@ under the License.
     responseHolder = {
       message: "Nope!"
     };
-    sent = false;
-    smtpTransport.sendMail(mailOptions, function(error, response) {
+    return smtpTransport.sendMail(mailOptions, function(error, response) {
       if (error) {
         console.log(error);
+        res.json({
+          sent: false,
+          error: error
+        });
       } else {
         responseHolder = response;
         console.log("Message sent: " + response.message);
-        sent = true;
+        res.json({
+          sent: true
+        });
       }
       return smtpTransport.close();
     });
-    res.json({
-      email: "sent: " + sent
-    });
-    return res.end();
   });
 
   /*

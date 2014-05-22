@@ -183,18 +183,16 @@ app.get "/send_confirmation/:email", (req, res) ->
 
     responseHolder =
         message: "Nope!"
-    sent = false
     smtpTransport.sendMail mailOptions, (error, response) ->
         if error
             console.log error
+            res.json({sent: false, error: error})
         else
             responseHolder = response
             console.log "Message sent: " + response.message
-            sent = true
-        smtpTransport.close()
+            res.json({sent: true})
 
-    res.json(email: "sent: " + sent)
-    res.end()
+        smtpTransport.close()
 
 ###
 Confirm an email by passing the email & token in the request, if the token matches the one stored for that email, the account is confirmed
