@@ -5,6 +5,7 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
     $rootScope.headerMenuItems = [
         { name: "Home", url: "#/", class: "" }
         { name: "App Creator", url: "#/app-creator", class: "active" }
+        {name: "Features", url: "#/features", class: ""}
         { name: "Contact", url: "#", class: "" }
     ]
 

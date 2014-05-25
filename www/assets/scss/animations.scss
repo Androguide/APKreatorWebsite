@@ -1,0 +1,202 @@
+@mixin animateSpin($name, $duration, $type, $easing) {
+  -webkit-animation-name: $name;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-iteration-count: $type;
+  -webkit-animation-timing-function: $easing;
+  -moz-animation-name: $name;
+  -moz-animation-duration: $duration;
+  -moz-animation-iteration-count: $type;
+  -moz-animation-timing-function: $easing;
+  -ms-animation-name: $name;
+  -ms-animation-duration: $duration;
+  -ms-animation-iteration-count: $type;
+  -ms-animation-timing-function: $easing;
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $type;
+  animation-timing-function: $easing;
+}
+
+.spin-animation {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms !important;
+  -webkit-animation-iteration-count: infinite !important;
+  -webkit-animation-timing-function: linear !important;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms !important;
+  -moz-animation-iteration-count: infinite !important;
+  -moz-animation-timing-function: linear !important;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms !important;
+  -ms-animation-iteration-count: infinite !important;
+  -ms-animation-timing-function: linear !important;
+
+  animation-name: spin;
+  animation-duration: 1000ms !important;
+  animation-iteration-count: infinite !important;
+  animation-timing-function: linear !important;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin2 {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin2 {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Devices animations for the landing page
+@-moz-keyframes device-left {
+  from {
+    margin-left: -300px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes device-left {
+  from {
+    margin-left: -300px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes device-left {
+  from {
+    margin-left: -300px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-moz-keyframes device-right {
+  from {
+    margin-right: -300px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@-webkit-keyframes device-right {
+  from {
+    margin-right: -300px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes device-right {
+  from {
+    margin-right: -300px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@-moz-keyframes device-left-hover {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -50px;
+  }
+}
+
+@-webkit-keyframes device-left-hover {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -50px;
+  }
+}
+
+@keyframes device-left-hover {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -50px;
+  }
+}
+
+@-moz-keyframes device-right {
+  from {
+    margin-right: -300px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@-webkit-keyframes device-right {
+  from {
+    margin-right: -300px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes device-right {
+  from {
+    margin-right: -300px;
+  }
+  to {
+    margin-right: 0;
+  }
+}

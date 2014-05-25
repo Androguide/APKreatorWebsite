@@ -63,3 +63,64 @@
     font-weight: 300;
     font-style: normal;
 }
+@font-face {
+    font-family: 'canter-bold-strips';
+    src: url('canter_bold_strips-webfont.eot');
+    src: url('canter_bold_strips-webfont.eot?#iefix') format('embedded-opentype'),
+         url('canter_bold_strips-webfont.woff') format('woff'),
+         url('canter_bold_strips-webfont.ttf') format('truetype'),
+         url('canter_bold_strips-webfont.svg#canterbold_strips') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canter-light';
+    src: url('canter_light-webfont.eot');
+    src: url('canter_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('canter_light-webfont.woff') format('woff'),
+         url('canter_light-webfont.ttf') format('truetype'),
+         url('canter_light-webfont.svg#canterlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'canter-outline';
+    src: url('canter_outline-webfont.eot');
+    src: url('canter_outline-webfont.eot?#iefix') format('embedded-opentype'),
+         url('canter_outline-webfont.woff') format('woff'),
+         url('canter_outline-webfont.ttf') format('truetype'),
+         url('canter_outline-webfont.svg#canteroutline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canter-bold';
+    src: url('canter_bold-webfont.eot');
+    src: url('canter_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('canter_bold-webfont.woff') format('woff'),
+         url('canter_bold-webfont.ttf') format('truetype'),
+         url('canter_bold-webfont.svg#canterbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canter-bold-3d';
+    src: url('canter_bold_3d-webfont.eot');
+    src: url('canter_bold_3d-webfont.eot?#iefix') format('embedded-opentype'),
+         url('canter_bold_3d-webfont.woff') format('woff'),
+         url('canter_bold_3d-webfont.ttf') format('truetype'),
+         url('canter_bold_3d-webfont.svg#canterbold_3d') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'canter-bold-shadow';
+    src: url('canter_bold_shadow-webfont.eot');
+    src: url('canter_bold_shadow-webfont.eot?#iefix') format('embedded-opentype'),
+         url('canter_bold_shadow-webfont.woff') format('woff'),
+         url('canter_bold_shadow-webfont.ttf') format('truetype'),
+         url('canter_bold_shadow-webfont.svg#canterbold_shadow') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

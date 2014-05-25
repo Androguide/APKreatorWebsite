@@ -1,5 +1,6 @@
 @import 'mixins';
 @import 'variables';
+@import 'animations';
 @import "reset";
 @import 'helpers';
 
@@ -89,6 +90,146 @@
 // end navigation bar
 
 /*-----------------
+  Landing Page
+------------------*/
+
+.home-slide-bg {
+  padding: 40px 20px;
+
+  h1.cloud {
+    @extend .long-text-shadow;
+    font-size: 6em;
+  }
+}
+
+.home-presentation {
+  position: relative;
+  z-index: 99;
+  padding-top: 20px;
+
+  h1.canter-light {
+    font-size: 4.2em;
+  }
+
+  div.row {
+    div.col-sm-6:first-child {
+      div.col-xs-10 {
+        h1 {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        @media screen and (min-width: 1200px) {
+          padding-left: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    div.col-sm-6:last-child {
+      div.row {
+        @media screen and (min-width: 768px) {
+          float: right;
+        }
+      }
+
+      div.col-xs-10 {
+        @media screen and (max-width: 768px) {
+          padding-left: 0;
+        }
+      }
+
+      h1.canter-light span {
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.home-features {
+
+  div.img-circle {
+    max-width: 64px;
+  }
+
+  .col-xs-9 h3 {
+    @extend .short-text-shadow;
+  }
+
+  img.hover-start {
+    @include animateSpin(spin, 500ms, normal, ease-in-out);
+  }
+
+  &:hover {
+    @extend .pointer;
+
+    .col-xs-3 blockquote {
+      border-left-color: $asphalt;
+
+      img.img-responsive {
+        @include animateSpin(spin, 500ms, normal, ease-in-out);
+      }
+    }
+    .col-xs-9 h3 {
+      color: $white;
+      @extend .long-text-shadow;
+    }
+  }
+
+  .col-xs-3 {
+    padding-right: 0;
+
+    blockquote {
+      padding: 0 0 0 20px;
+    }
+  }
+
+  .col-xs-9 {
+    &.two-lines {
+      padding-top: 7px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      padding-left: 25px;
+      padding-bottom: 30px;
+
+      &.two-lines {
+        padding-top: 0;
+
+        h3 {
+          margin-top: -5px;
+        }
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      padding-top: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-top: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.home-device {
+  margin-top: 9px;
+}
+
+// end landing page
+
+/*-----------------
   Card Directive
 ------------------*/
 div.ng-card {
@@ -107,7 +248,7 @@ div.ng-card {
   }
 
   p {
-    font-family: $aleo-font;
+    font-family: $aleo;
     font-size: 1.15em;
     padding-right: 5px;
     padding-left: 5px;
@@ -122,7 +263,7 @@ div.ng-card {
     max-width: 100%;
     min-height: 72px;
     border: 1px solid #ababab;
-    font-family: $aleo-font;
+    font-family: $aleo;
     font-size: 1.1em;
   }
 
@@ -151,7 +292,7 @@ div.ng-card {
     display: block;
     font-size: 1.1em;
     border: 1px solid #ababab;
-    font-family: $aleo-font;
+    font-family: $aleo;
 
     &:focus {
       padding-left: 0;
@@ -183,7 +324,7 @@ div.ng-card {
     width: 100%;
     display: block;
     border: 1px solid #ababab;
-    font-family: $aleo-font;
+    font-family: $aleo;
 
     &:focus {
       padding-left: 0;
@@ -198,7 +339,7 @@ div.ng-card {
 
   a {
     font-size: 0.9em;
-    font-family: $aleo-font;
+    font-family: $aleo;
   }
 }
 

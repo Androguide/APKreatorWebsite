@@ -2,6 +2,7 @@
 (function() {
   'use strict';
   angular.module('ngApkreator').controller('MainCtrl', function($scope, $rootScope) {
+    var spinIcons;
     $rootScope.headerMenuItems = [
       {
         name: "Home",
@@ -12,26 +13,20 @@
         url: "#/app-creator",
         "class": ""
       }, {
+        name: "Features",
+        url: "#/features",
+        "class": ""
+      }, {
         name: "Contact",
         url: "#",
         "class": ""
       }
     ];
-    return $scope.carouselItems = [
-      {
-        "class": "active turquoise-bg",
-        image: "assets/img/device1.png",
-        alt: ""
-      }, {
-        "class": "amethyst-bg",
-        image: "assets/img/device2.png",
-        alt: ""
-      }, {
-        "class": "belize-bg",
-        image: "assets/img/device3.png",
-        alt: ""
-      }
-    ];
+    spinIcons = $('.home-features img');
+    spinIcons.addClass('hover-start');
+    return setTimeout(function() {
+      return spinIcons.removeClass('hover-start');
+    }, 500);
   });
 
 }).call(this);

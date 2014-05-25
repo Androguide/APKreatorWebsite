@@ -4,16 +4,16 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: $mohave-font;
+  font-family: $mohave;
 }
 
 .vex-dialog-message, .vex-dialog-prompt-input {
-  font-family: $aleo-font !important;
+  font-family: $aleo !important;
   font-size: 1.05em;
 }
 
 .vex-dialog-button {
-  font-family: $mohave-font !important;
+  font-family: $mohave !important;
   font-size: 1em !important;
 }
 

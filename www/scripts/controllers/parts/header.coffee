@@ -3,12 +3,13 @@
 angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $compile, $http) ->
     hoodie = new Hoodie()
     $rootScope.account = {}
-    $rootScope.dropdown = {label: "Sign In"}
+    $rootScope.dropdown = {label: "Account"}
     $scope.username = hoodie.account.username
 
     $rootScope.headerMenuItems = [
         {name: "Home", url: "#/"}
         {name: "App Creator", url: "#/app-creator"}
+        {name: "Features", url: "#/features"}
         {name: "Contact", url: "#"}
     ]
 
@@ -39,7 +40,7 @@ angular.module('ngApkreator').controller 'HeaderCtrl', ($scope, $rootScope, $com
                 ]
                 $rootScope.dropdown.label = hoodie.account.username
                 $scope.$digest()
-        return # this explicit return is mandatory, otherwise Coffee will return the html, causing angular to throw a security error when there really isn't.
+        return # this explicit return is mandatory, otherwise CoffeeScript will return the html, causing angular to throw a security error when there really isn't.
 
     $scope.signUp = ->
         dialog = $scope.compileHtml """<div ng-include ng-controller="SignUpCtrl" src="'views/parts/dialogs/sign-up.html'"></div>"""

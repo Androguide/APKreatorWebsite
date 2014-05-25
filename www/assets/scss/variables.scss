@@ -1,18 +1,52 @@
 // Colors
+$alizarin: #da4d3d;
+$alizarin_darker: #924333;
+$amethyst: #9b59b6;
+$asphalt: #34495e;
 $belize: #2980b9;
 $belize_darker: #235686;
-$white: #fff;
+$carrot: #e67e22;
 $cloud: #ecf0f1;
-$teal: #16a085;
-$teal-darker: #168e73;
-$turquoise: #1abc9c;
-$asphalt: #34495e;
-$amethyst: #9b59b6;
 $nephrytis: #27ae60;
 $pumpkin: #d35400;
 $pumpkin_darker: #a03d00;
-$carrot: #e67e22;
+$sunflower: #f1c40f;
+$teal: #16a085;
+$teal-darker: #168e73;
+$turquoise: #1abc9c;
+$white: #fff;
 
 // Fonts
-$aleo-font: aleo, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$mohave-font:  mohave, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$aleo: aleo, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mohave: mohave, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$canter-bold: canter-bold, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$canter-bold-3d: canter-bold-3d, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$canter-bold-shadow: canter-bold-shadow, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$canter-bold-strips: canter-bold-strips, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$canter-outline: canter-outline, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$canter-light: canter-light, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Arrays
+$colors:
+        ($alizarin, alizarin),
+        ($alizarin_darker, alizarin_darker),
+        ($amethyst, amethyst),
+        ($asphalt, asphalt),
+        ($belize, belize), ($belize_darker, belize_darker),
+        ($carrot, carrot),
+        ($cloud, cloud), ($nephrytis, nephrytis),
+        ($pumpkin, pumpkin), ($pumpkin_darker, pumpkin_darker),
+        ($sunflower, sunflower),
+        ($teal, teal), ($teal-darker, teal-darker),
+        ($turquoise, turquoise),
+        ($white, white);
+
+$fonts:
+        ($aleo, aleo),
+        ($mohave, mohave),
+        ($canter-light, canter-light),
+        ($canter-bold, canter-bold),
+        ($canter-bold-3d, canter-bold-3d),
+        ($canter-bold-shadow, canter-bold-shadow),
+        ($canter-bold-strips, canter-bold-strips),
+        ($canter-outline, canter-outline);

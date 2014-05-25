@@ -13,6 +13,10 @@
         url: "#/app-creator",
         "class": "active"
       }, {
+        name: "Features",
+        url: "#/features",
+        "class": ""
+      }, {
         name: "Contact",
         url: "#",
         "class": ""

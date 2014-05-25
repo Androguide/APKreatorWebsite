@@ -6,7 +6,7 @@
     hoodie = new Hoodie();
     $rootScope.account = {};
     $rootScope.dropdown = {
-      label: "Sign In"
+      label: "Account"
     };
     $scope.username = hoodie.account.username;
     $rootScope.headerMenuItems = [
@@ -16,6 +16,9 @@
       }, {
         name: "App Creator",
         url: "#/app-creator"
+      }, {
+        name: "Features",
+        url: "#/features"
       }, {
         name: "Contact",
         url: "#"

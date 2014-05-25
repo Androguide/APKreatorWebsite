@@ -14,6 +14,9 @@
     }).when('/sign-up', {
       templateUrl: 'views/parts/dialogs/sign-up.html',
       controller: 'SignUpCtrl'
+    }).when('/features', {
+      templateUrl: 'views/features.html',
+      controller: 'FeaturesCtrl'
     }).otherwise({
       redirectTo: '/'
     });

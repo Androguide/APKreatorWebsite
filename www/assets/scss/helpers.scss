@@ -7,79 +7,50 @@
 }
 
 // FONTS
-.aleo {
-  font-family: $aleo-font;
-}
-
-.mohave {
-  font-family: $mohave-font;
+@each $font, $name in $fonts {
+  .#{$name} {
+    font-family: $font;
+  }
 }
 
 // BACKGROUND COLORS
-.belize-bg {
-  background: $belize;
-}
-
-.asphalt-bg {
-  background: $asphalt;
-}
-
-.amethyst-bg {
-  background: $amethyst;
-}
-
-.turquoise-bg {
-  background: $turquoise;
-}
-
-.nephrytis-bg {
-  background: $nephrytis;
-}
-
-.pumpkin-bg {
-  background: $pumpkin;
+@each $color, $name in $colors {
+  .#{$name}-bg {
+    background: $color !important;
+  }
 }
 
 // TEXT COLORS
-.white {
-  color: $white !important;
-}
-
-.belize {
-  color: $belize !important;
-}
-
-.teal {
-  color: $teal !important;
-}
-
-.amethyst {
-  color: $amethyst !important;
-}
-
-.asphalt {
-  color: $asphalt !important;
-}
-
-.cloud {
-  color: $cloud !important;
-}
-
-.nephrytis {
-  color: $nephrytis !important;
-}
-
-.pumpkin {
-  color: $pumpkin !important;
-}
-
-.carrot {
-  color: $carrot !important;
+@each $color, $name in $colors {
+  .#{$name} {
+    color: $color !important;
+  }
 }
 
 // BUTTONS
+@each $color, $name in $colors {
+  .#{$name} {
+    color: $color !important;
+  }
+}
+
+// BLOCKQUOTES
+@each $color, $name in $colors {
+  blockquote.#{$name} {
+    border-left-color: $color;
+  }
+}
+
 .btn-teal {
   @include flatButton($teal, $teal-darker, 42px);
+}
+
+.btn-alizarin {
+  @include flatButton($alizarin, $alizarin_darker, 42px);
+}
+
+.btn-alizarin-big {
+  @include flatButton($alizarin, $alizarin_darker, 68px);
 }
 
 .btn-teal-big {
@@ -109,19 +80,6 @@
   @include underline($teal);
 }
 
-// BLOCKQUOTES
-blockquote.teal {
-  border-left-color: $teal;
-}
-
-blockquote.belize {
-  border-left-color: $belize;
-}
-
-blockquote.carrot {
-  border-left-color: $carrot;
-}
-
 // POSITIONING
 .blk-center {
   display: block;
@@ -131,6 +89,18 @@ blockquote.carrot {
 
 .no-margin-top {
   margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 // CHECKBOX
@@ -193,4 +163,129 @@ blockquote.carrot {
       left: 30px;
     }
   }
+}
+
+// Animations
+.start-anim-left {
+  -moz-animation: device-left 1s ease-in-out;
+  -webkit-animation: device-left 1s ease-in-out;
+  animation: device-left 1s ease-in-out;
+}
+
+.start-anim-right {
+  -moz-animation: device-right 1s;
+  -webkit-animation: device-right 1s;
+  animation: device-right 1s;
+}
+
+.after-hover-left {
+  -moz-animation: device-left-hover 1s;
+  -webkit-animation: device-left-hover 1s;
+  animation: device-left-hover 1s;
+}
+
+.after-hover-right {
+  -moz-animation: device-right-hover 1s;
+  -webkit-animation: device-right-hover 1s;
+  animation: device-right-hover 1s;
+}
+
+.long-box-shadow {
+  box-shadow: rgb(23, 164, 136) 1px 1px,
+  rgb(23, 165, 137) 2px 2px,
+  rgb(23, 166, 138) 3px 3px,
+  rgb(23, 167, 138) 4px 4px,
+  rgb(23, 168, 139) 5px 5px,
+  rgb(23, 168, 140) 6px 6px,
+  rgb(23, 169, 140) 7px 7px,
+  rgb(23, 170, 141) 8px 8px,
+  rgb(23, 171, 142) 9px 9px,
+  rgb(24, 172, 142) 10px 10px,
+  rgb(24, 172, 143) 11px 11px,
+  rgb(24, 173, 144) 12px 12px,
+  rgb(24, 174, 144) 13px 13px,
+  rgb(24, 175, 145) 14px 14px,
+  rgb(24, 176, 146) 15px 15px,
+  rgb(24, 176, 146) 16px 16px,
+  rgb(24, 177, 147) 17px 17px,
+  rgb(24, 178, 148) 18px 18px,
+  rgb(24, 179, 148) 19px 19px,
+  rgb(25, 180, 149) 20px 20px,
+  rgb(25, 180, 150) 21px 21px,
+  rgb(25, 181, 150) 22px 22px,
+  rgb(25, 182, 151) 23px 23px,
+  rgb(25, 183, 152) 24px 24px,
+  rgb(25, 184, 152) 25px 25px,
+  rgb(25, 184, 153) 26px 26px,
+  rgb(25, 185, 154) 27px 27px,
+  rgb(25, 186, 154) 28px 28px,
+  rgb(25, 187, 155) 29px 29px,
+  rgb(26, 188, 156) 30px 30px;
+}
+
+.long-text-shadow {
+  text-shadow: rgb(23, 164, 136) 1px 1px,
+  rgb(23, 165, 137) 2px 2px,
+  rgb(23, 166, 138) 3px 3px,
+  rgb(23, 167, 138) 4px 4px,
+  rgb(23, 168, 139) 5px 5px,
+  rgb(23, 168, 140) 6px 6px,
+  rgb(23, 169, 140) 7px 7px,
+  rgb(23, 170, 141) 8px 8px,
+  rgb(23, 171, 142) 9px 9px,
+  rgb(24, 172, 142) 10px 10px,
+  rgb(24, 172, 143) 11px 11px,
+  rgb(24, 173, 144) 12px 12px,
+  rgb(24, 174, 144) 13px 13px,
+  rgb(24, 175, 145) 14px 14px,
+  rgb(24, 176, 146) 15px 15px,
+  rgb(24, 176, 146) 16px 16px,
+  rgb(24, 177, 147) 17px 17px,
+  rgb(24, 178, 148) 18px 18px,
+  rgb(24, 179, 148) 19px 19px,
+  rgb(25, 180, 149) 20px 20px,
+  rgb(25, 180, 150) 21px 21px,
+  rgb(25, 181, 150) 22px 22px,
+  rgb(25, 182, 151) 23px 23px,
+  rgb(25, 183, 152) 24px 24px,
+  rgb(25, 184, 152) 25px 25px,
+  rgb(25, 184, 153) 26px 26px,
+  rgb(25, 185, 154) 27px 27px,
+  rgb(25, 186, 154) 28px 28px,
+  rgb(25, 187, 155) 29px 29px,
+  rgb(26, 188, 156) 30px 30px;
+}
+
+.short-box-shadow {
+  box-shadow: rgb(21, 152, 126) 1px 1px,
+  rgb(21, 154, 128) 2px 2px,
+  rgb(21, 157, 130) 3px 3px,
+  rgb(22, 159, 132) 4px 4px,
+  rgb(22, 161, 134) 5px 5px,
+  rgb(22, 164, 136) 6px 6px,
+  rgb(23, 166, 138) 7px 7px,
+  rgb(23, 169, 140) 8px 8px,
+  rgb(23, 171, 142) 9px 9px,
+  rgb(24, 173, 144) 10px 10px,
+  rgb(24, 176, 146) 11px 11px,
+  rgb(24, 178, 148) 12px 12px,
+  rgb(25, 180, 150) 13px 13px,
+  rgb(25, 183, 152) 14px 14px,
+  rgb(25, 185, 154) 15px 15px,
+  rgb(26, 188, 156) 16px 16px;
+}
+
+.short-text-shadow {
+  text-shadow: rgb(23, 170, 141) 1px 1px,
+  rgb(23, 172, 142) 2px 2px,
+  rgb(23, 173, 144) 3px 3px,
+  rgb(24, 175, 145) 4px 4px,
+  rgb(24, 176, 146) 5px 5px,
+  rgb(24, 178, 148) 6px 6px,
+  rgb(24, 180, 149) 7px 7px,
+  rgb(25, 181, 150) 8px 8px,
+  rgb(25, 183, 152) 9px 9px,
+  rgb(25, 184, 153) 10px 10px,
+  rgb(25, 186, 154) 11px 11px,
+  rgb(26, 188, 156) 12px 12px;
 }
