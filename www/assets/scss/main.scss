@@ -1,8 +1,23 @@
-@import 'mixins';
+@import 'mixin';
 @import 'variables';
 @import 'animations';
 @import "reset";
 @import 'helpers';
+
+footer {
+  min-height: 100px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  .built-with {
+    img {
+      max-height: 35px;
+      margin-left: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
 
 /*--------------------
     Navigation Bar
@@ -97,18 +112,28 @@
   padding: 40px 20px;
 
   h1.cloud {
-    @extend .long-text-shadow;
-    font-size: 6em;
+    @extend .short-text-shadow;
+    font-size: 4em;
   }
 }
 
 .home-presentation {
   position: relative;
-  z-index: 99;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   h1.canter-light {
     font-size: 4.2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  #who-for {
+    @media screen and (max-width: 768px) {
+      margin-top: 30px;
+    }
   }
 
   div.row {
@@ -163,7 +188,7 @@
   }
 
   img.hover-start {
-    @include animateSpin(spin, 500ms, normal, ease-in-out);
+    @include animateSpin(spin, 600ms, normal, ease-out);
   }
 
   &:hover {

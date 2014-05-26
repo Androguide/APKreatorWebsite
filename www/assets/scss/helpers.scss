@@ -1,5 +1,5 @@
 @import "variables";
-@import "mixins";
+@import "mixin";
 
 @mixin underline($color) {
   display: inline-block;
@@ -9,7 +9,7 @@
 // FONTS
 @each $font, $name in $fonts {
   .#{$name} {
-    font-family: $font;
+    font-family: $font !important;
   }
 }
 
@@ -74,6 +74,10 @@
 .btn-pumpkin-big {
   @include flatButton(#f39c12, #b46712, 68px);
   font-size: 2.5em;
+}
+
+.btn-nephrytis-big {
+  @include flatButton($nephrytis, $nephrytis_darker, 68px);
 }
 
 .underline-teal {
