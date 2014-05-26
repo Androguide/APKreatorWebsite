@@ -6,9 +6,7 @@
 
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	&:hover {
 		@include prefixed(transform, translateY(-5px));
 	}
 }

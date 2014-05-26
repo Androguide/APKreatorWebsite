@@ -16,6 +16,32 @@
   animation-iteration-count: infinite !important;
   animation-timing-function: linear !important; }
 
+.slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.slide.ng-enter,
+.slide.ng-leave {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.slide.ng-enter {
+  left: 100%; }
+
+.slide.ng-enter-active {
+  left: 0; }
+
+.slide.ng-leave {
+  left: 0; }
+
+.slide.ng-leave-active {
+  left: -100%; }
+
 @-moz-keyframes spin {
   from {
     -moz-transform: rotate(0deg); }
@@ -157,23 +183,14 @@ h1, h2, h3, h4, h5 {
 .mohave {
   font-family: mohave, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
-.canter-light {
-  font-family: canter-light, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+.infinity {
+  font-family: infinity, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
-.canter-bold {
-  font-family: canter-bold, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+.franks {
+  font-family: franks, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
-.canter-bold-3d {
-  font-family: canter-bold-3d, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
-
-.canter-bold-shadow {
-  font-family: canter-bold-shadow, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
-
-.canter-bold-strips {
-  font-family: canter-bold-strips, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
-
-.canter-outline {
-  font-family: canter-outline, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+.inmyheart {
+  font-family: inmyheart, "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
 
 .alizarin-bg {
   background: #da4d3d !important; }
@@ -198,6 +215,12 @@ h1, h2, h3, h4, h5 {
 
 .cloud-bg {
   background: #ecf0f1 !important; }
+
+.cloud-bg {
+  background: #ecf0f1 !important; }
+
+.midnight-bg {
+  background: #2c3e50 !important; }
 
 .nephrytis-bg {
   background: #27ae60 !important; }
@@ -247,6 +270,12 @@ h1, h2, h3, h4, h5 {
 .cloud {
   color: #ecf0f1 !important; }
 
+.cloud {
+  color: #ecf0f1 !important; }
+
+.midnight {
+  color: #2c3e50 !important; }
+
 .nephrytis {
   color: #27ae60 !important; }
 
@@ -295,6 +324,12 @@ h1, h2, h3, h4, h5 {
 .cloud {
   color: #ecf0f1 !important; }
 
+.cloud {
+  color: #ecf0f1 !important; }
+
+.midnight {
+  color: #2c3e50 !important; }
+
 .nephrytis {
   color: #27ae60 !important; }
 
@@ -342,6 +377,12 @@ blockquote.carrot {
 
 blockquote.cloud {
   border-left-color: #ecf0f1; }
+
+blockquote.cloud {
+  border-left-color: #ecf0f1; }
+
+blockquote.midnight {
+  border-left-color: #2c3e50; }
 
 blockquote.nephrytis {
   border-left-color: #27ae60; }
@@ -768,6 +809,8 @@ footer {
   min-height: 100px;
   padding-top: 10px;
   padding-bottom: 5px; }
+  footer #built-with-div {
+    padding-left: 10px; }
   footer .built-with img {
     max-height: 35px;
     margin-left: 5px;

@@ -41,7 +41,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'aleo';
     src: url('aleo-bold-webfont.eot');
@@ -52,7 +51,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'aleo';
     src: url('aleo-light-webfont.eot');
@@ -61,5 +59,35 @@
     url('aleo-light-webfont.ttf') format('truetype'),
     url('aleo-light-webfont.svg#aleo') format('svg');
     font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'infinity';
+    src: url('infinity.eot');
+    src: url('infinity.eot?#iefix') format('embedded-opentype'),
+    url('infinity.woff') format('woff'),
+    url('infinity.ttf') format('truetype'),
+    url('infinity.svg#infinityregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'franks';
+    src: url('franks_regular.eot');
+    src: url('franks_regular.eot?#iefix') format('embedded-opentype'),
+    url('franks_regular.woff') format('woff'),
+    url('franks_regular.ttf') format('truetype'),
+    url('franks_regular.svg#franksregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'inmyheart';
+    src: url('always_in_my_heart.eot');
+    src: url('always_in_my_heart.eot?#iefix') format('embedded-opentype'),
+    url('always_in_my_heart.woff') format('woff'),
+    url('always_in_my_heart.ttf') format('truetype'),
+    url('always_in_my_heart.svg#always_in_my_heartregular') format('svg');
+    font-weight: normal;
     font-style: normal;
 }

@@ -7,6 +7,7 @@ $belize: #2980b9;
 $belize_darker: #235686;
 $carrot: #e67e22;
 $cloud: #ecf0f1;
+$midnight: #2c3e50;
 $nephrytis: #27ae60;
 $nephrytis_darker: #338a45;
 $pumpkin: #d35400;
@@ -20,12 +21,10 @@ $white: #fff;
 // Fonts
 $aleo: aleo, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $mohave: mohave, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$canter-bold: canter-bold, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$canter-bold-3d: canter-bold-3d, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$canter-bold-shadow: canter-bold-shadow, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$canter-bold-strips: canter-bold-strips, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$canter-outline: canter-outline, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$canter-light: canter-light, "Abel", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$infinity: infinity, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$franks: franks, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$inmyheart: inmyheart, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 // Arrays
 $colors:
@@ -35,7 +34,10 @@ $colors:
         ($asphalt, asphalt),
         ($belize, belize), ($belize_darker, belize_darker),
         ($carrot, carrot),
-        ($cloud, cloud), ($nephrytis, nephrytis),
+        ($cloud, cloud),
+        ($cloud, cloud),
+        ($midnight, midnight),
+        ($nephrytis, nephrytis),
         ($pumpkin, pumpkin), ($pumpkin_darker, pumpkin_darker),
         ($sunflower, sunflower),
         ($teal, teal), ($teal-darker, teal-darker),
@@ -45,9 +47,6 @@ $colors:
 $fonts:
         ($aleo, aleo),
         ($mohave, mohave),
-        ($canter-light, canter-light),
-        ($canter-bold, canter-bold),
-        ($canter-bold-3d, canter-bold-3d),
-        ($canter-bold-shadow, canter-bold-shadow),
-        ($canter-bold-strips, canter-bold-strips),
-        ($canter-outline, canter-outline);
+        ($infinity, infinity),
+        ($franks, franks),
+        ($inmyheart, inmyheart)

@@ -7,9 +7,7 @@
 
 	@include hacks();
 
-	&:hover,
-	&:focus,
-	&:active {
+	&:hover {
 		@include prefixed(transform, skew(-10deg));
 	}
 }

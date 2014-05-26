@@ -1,10 +1,11 @@
 'use strict'
 
 angular.module('ngApkreator', [
+    'angular-parallax',
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute',
+    'ngRoute'
 ]).config ($routeProvider) ->
     $routeProvider
 

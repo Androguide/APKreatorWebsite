@@ -9,6 +9,10 @@ footer {
   padding-top: 10px;
   padding-bottom: 5px;
 
+  #built-with-div {
+    padding-left: 10px;
+  }
+
   .built-with {
     img {
       max-height: 35px;
@@ -23,7 +27,6 @@ footer {
     Navigation Bar
 --------------------*/
 .navbar-apkreator {
-
   @include setBorderRadius(0);
   background: $teal;
   margin-bottom: 0;
