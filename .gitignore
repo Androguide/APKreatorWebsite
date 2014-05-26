@@ -2,7 +2,8 @@ node_modules
 dist
 data
 persist
-.idea
+.idea/workspace.xml
+.idea/tasks.xml
 .tmp
 .sass-cache
 www/bower_components
