@@ -755,13 +755,13 @@ blockquote.white {
 .long-box-shadow {
   box-shadow: #17a488 1px 1px, #17a589 2px 2px, #17a68a 3px 3px, #17a78a 4px 4px, #17a88b 5px 5px, #17a88c 6px 6px, #17a98c 7px 7px, #17aa8d 8px 8px, #17ab8e 9px 9px, #18ac8e 10px 10px, #18ac8f 11px 11px, #18ad90 12px 12px, #18ae90 13px 13px, #18af91 14px 14px, #18b092 15px 15px, #18b092 16px 16px, #18b193 17px 17px, #18b294 18px 18px, #18b394 19px 19px, #19b495 20px 20px, #19b496 21px 21px, #19b596 22px 22px, #19b697 23px 23px, #19b798 24px 24px, #19b898 25px 25px, #19b899 26px 26px, #19b99a 27px 27px, #19ba9a 28px 28px, #19bb9b 29px 29px, #1abc9c 30px 30px; }
 
-.long-text-shadow, .home-features:hover .col-xs-9 h3 {
+.long-text-shadow {
   text-shadow: #17a488 1px 1px, #17a589 2px 2px, #17a68a 3px 3px, #17a78a 4px 4px, #17a88b 5px 5px, #17a88c 6px 6px, #17a98c 7px 7px, #17aa8d 8px 8px, #17ab8e 9px 9px, #18ac8e 10px 10px, #18ac8f 11px 11px, #18ad90 12px 12px, #18ae90 13px 13px, #18af91 14px 14px, #18b092 15px 15px, #18b092 16px 16px, #18b193 17px 17px, #18b294 18px 18px, #18b394 19px 19px, #19b495 20px 20px, #19b496 21px 21px, #19b596 22px 22px, #19b697 23px 23px, #19b798 24px 24px, #19b898 25px 25px, #19b899 26px 26px, #19b99a 27px 27px, #19ba9a 28px 28px, #19bb9b 29px 29px, #1abc9c 30px 30px; }
 
 .short-box-shadow {
   box-shadow: #15987e 1px 1px, #159a80 2px 2px, #159d82 3px 3px, #169f84 4px 4px, #16a186 5px 5px, #16a488 6px 6px, #17a68a 7px 7px, #17a98c 8px 8px, #17ab8e 9px 9px, #18ad90 10px 10px, #18b092 11px 11px, #18b294 12px 12px, #19b496 13px 13px, #19b798 14px 14px, #19b99a 15px 15px, #1abc9c 16px 16px; }
 
-.short-text-shadow, .home-slide-bg h1.cloud, .home-features .col-xs-9 h3 {
+.short-text-shadow, .home-slide-bg h1.cloud, .home-features .col-xs-9 h3, .home-features:hover .col-xs-9 h3 {
   text-shadow: #17aa8d 1px 1px, #17ac8e 2px 2px, #17ad90 3px 3px, #18af91 4px 4px, #18b092 5px 5px, #18b294 6px 6px, #18b495 7px 7px, #19b596 8px 8px, #19b798 9px 9px, #19b899 10px 10px, #19ba9a 11px 11px, #1abc9c 12px 12px; }
 
 footer {

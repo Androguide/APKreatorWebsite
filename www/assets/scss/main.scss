@@ -203,7 +203,7 @@ footer {
     }
     .col-xs-9 h3 {
       color: $white;
-      @extend .long-text-shadow;
+      @extend .short-text-shadow;
     }
   }
 

@@ -24,9 +24,11 @@ under the License.
 
 
 (function() {
-  var API_KEY, APP_NAME, COLOR_SCHEME, FACEBOOK, GPLUS, ICON_LINK, PACKAGE_NAME, TWITTER, WEBSITE, WELCOME_DESC, WELCOME_TITLE, XMLizeString, YOUTUBE_NAME, app, done, exec, express, generateConfigXML, getCompliantRandomness, nodemailer, port, puts, randomHolder, response, smtpTransport, storage;
+  var API_KEY, APP_NAME, COLOR_SCHEME, FACEBOOK, GPLUS, ICON_LINK, LOG_ENABLED, PACKAGE_NAME, TWITTER, WEBSITE, WELCOME_DESC, WELCOME_TITLE, XMLizeString, YOUTUBE_NAME, app, done, exec, express, generateConfigXML, getCompliantRandomness, nodemailer, port, puts, randomHolder, response, smtpTransport, storage;
 
   port = 5000;
+
+  LOG_ENABLED = false;
 
   express = require("express");
 
@@ -98,7 +100,9 @@ under the License.
     configBegin += "welcome-title='" + welcomeTitle + "' \nwelcome-desc='" + welcomeDesc + "' \n";
     configBegin += "developer-key='" + apiKey + "'\n";
     configBegin += "website='" + socialLinksArray[0] + "' \ntwitter='" + socialLinksArray[1] + "' \nfacebook='" + socialLinksArray[2] + "' \ng-plus='http://plus.google.com/u/0/" + socialLinksArray[3] + "/posts' />" + "\n" + "</plugin>";
-    console.log(configBegin);
+    if (LOG_ENABLED) {
+      console.log(configBegin);
+    }
     return configBegin;
   };
 
@@ -108,7 +112,9 @@ under the License.
 
 
   puts = function(error, stdout, stderr) {
-    console.log(stdout);
+    if (LOG_ENABLED) {
+      console.log(stdout);
+    }
   };
 
   /*
@@ -117,7 +123,9 @@ under the License.
 
 
   done = function(error, stdout, stderr) {
-    console.log(stdout);
+    if (LOG_ENABLED) {
+      console.log(stdout);
+    }
     response.json({
       apkUrl: "out/" + randomHolder + "/" + PACKAGE_NAME + ".apk",
       stdOut: stdout,
@@ -186,7 +194,9 @@ under the License.
     exec("sed -i 's/url=\"placeholder\"" + "/url=\"" + iconurl + "\"/g' " + random + ".sh", puts);
     exec("sed -i 's/random=\"placeholder\"" + "/random=\"" + random + "\"/g' " + random + ".sh", puts);
     return exec("./" + random + ".sh", function(error, stdout, stderr) {
-      console.log(stdout);
+      if (LOG_ENABLED) {
+        console.log(stdout);
+      }
       response.json({
         apkUrl: "out/" + randomHolder + "/" + PACKAGE_NAME + ".apk",
         stdOut: stdout,
@@ -203,7 +213,7 @@ under the License.
 
 
   app.get("/send_confirmation/:email", function(req, res) {
-    var mailOptions, responseHolder, rn;
+    var mailOptions, rn;
     res.set("Access-Control-Allow-Origin", "*");
     rn = getCompliantRandomness();
     storage.setItem(req.params.email, {
@@ -217,19 +227,19 @@ under the License.
       text: "Welcome to APKreator! To start creating your amazing app(s), please click on the link below to confirm your email address: http://localhost:5000/confirm_account/" + req.params.email + "/" + rn,
       html: "<b>Welcome to APKreator!</b><br>To start creating your amazing app(s), please click on the link below to confirm your email address:                         <br/><br/><center><a href=\"#\">http://localhost:5000/confirm_account/" + req.params.email + "/" + rn + "</a></center>"
     };
-    responseHolder = {
-      message: "Nope!"
-    };
     return smtpTransport.sendMail(mailOptions, function(error, response) {
       if (error) {
-        console.log(error);
+        if (LOG_ENABLED) {
+          console.log("ERROR: ", error, response);
+        }
         res.json({
           sent: false,
           error: error
         });
       } else {
-        responseHolder = response;
-        console.log("Message sent: " + response.message);
+        if (LOG_ENABLED) {
+          console.log("Message sent: ", response);
+        }
         res.json({
           sent: true
         });
