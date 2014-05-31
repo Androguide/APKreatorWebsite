@@ -220,8 +220,8 @@ Returns true if the user has confirmed his email, returns false otherwise
 ###
 app.get "/is_confirmed/:email", (req, res) ->
     res.set "Access-Control-Allow-Origin", "*"
-    console.log("is_confirmed", req.params.email) if LOG_ENABLED
     stored = storage.getItem req.params.email
+    console.log "is_confirmed: ", req.params.email
     if stored
         res.json(confirmed: stored.confirmed)
     else

@@ -101,7 +101,7 @@ angular.module('ngApkreator').controller 'AppCreatorCtrl', ($scope, $rootScope, 
         </div>
         """
 
-        $http.get('http://ec2-54-187-101-214.us-west-2.compute.amazonaws.com:5000' + request, {timeout: 500})
+        $http.get('http://localhost:5000' + request, {timeout: 600000})
         .success((data, status, headers, config) ->
             console.log data, status, headers, config
             vex.closeAll()

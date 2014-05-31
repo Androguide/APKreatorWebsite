@@ -286,10 +286,8 @@ under the License.
   app.get("/is_confirmed/:email", function(req, res) {
     var stored;
     res.set("Access-Control-Allow-Origin", "*");
-    if (LOG_ENABLED) {
-      console.log("is_confirmed", req.params.email);
-    }
     stored = storage.getItem(req.params.email);
+    console.log("is_confirmed: ", req.params.email);
     if (stored) {
       return res.json({
         confirmed: stored.confirmed
