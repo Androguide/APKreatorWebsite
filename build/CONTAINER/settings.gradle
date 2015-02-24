@@ -1,1 +1,0 @@
-include ':APKreator', ':libs:CardsUILib', ':libs:PagerSlidingStrip', ':libs:SwitchCompatLibrary', ':libs:HoloGraphLibrary'

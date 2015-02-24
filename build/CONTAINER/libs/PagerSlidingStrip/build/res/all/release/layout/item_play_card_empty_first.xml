@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/cardContent"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginTop="16dp"
-    android:background="@drawable/card_background" >
-
-</FrameLayout><!-- From: file:/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/CardsUILib/res/layout/item_play_card_empty_first.xml --><!-- From: file:/home/androguide/Dropbox/HoodieApkreator/build/CONTAINER/libs/PagerSlidingStrip/build/exploded-aar/CONTAINER.libs/CardsUILib/unspecified/res/layout/item_play_card_empty_first.xml -->
